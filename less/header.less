@@ -1,5 +1,5 @@
 header.home {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), url('../assets/appetizer-dark-delicious-326279.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../assets/appetizer-dark-delicious-326279.jpg');
     background-size: auto, cover;
     background-position: center, top;
     display: flex;
@@ -11,9 +11,10 @@ header.home {
         max-width: 35%;
         margin: 0 auto;
         padding-right: 45%;
+        color: white;
 
         h1 {
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid white;
             padding-bottom: 0.5em;
         }
 
@@ -24,11 +25,12 @@ header.home {
         }
 
         .cta-button {
-            background-color: #FFBF00;
+            background-color: @accent-color;
+            text-align: center;
+            text-shadow: 0 0 0.2rem #A0A0A0;
             padding: 1em;
             border-radius: 0.5em;
             width: 15em;
-            text-align: center;
             cursor: pointer;
 
             &:hover {
