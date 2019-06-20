@@ -356,20 +356,21 @@ header.home .inner {
 }
 header.home .inner h1 {
   border-bottom: 1px solid white;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.5rem;
+  font-size: 3.2rem;
 }
 header.home .inner p {
-  padding: 1em 0;
-  margin-top: 0;
-  width: 80%;
+  font-size: 1.3rem;
+  margin: 0 0 1rem;
+  width: 70%;
 }
 header.home .inner .cta-button {
   background-color: #FFBF00;
   text-align: center;
   text-shadow: 0 0 0.2rem #A0A0A0;
-  padding: 1em;
-  border-radius: 0.5em;
-  width: 15em;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 15rem;
   cursor: pointer;
 }
 header.home .inner .cta-button:hover {
