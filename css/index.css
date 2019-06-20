@@ -344,7 +344,7 @@ header.home {
   background-size: auto, cover;
   background-position: center, top;
   display: flex;
-  padding: 10em 0 10em;
+  padding: 15rem 0 15rem;
 }
 header.home .inner {
   display: flex;
