@@ -231,7 +231,7 @@ progress {
 textarea {
   overflow: auto;
 }
-/**
+
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
@@ -280,12 +280,14 @@ textarea {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
+
 details {
   display: block;
 }
 /*
  * Add the correct display in all browsers.
  */
+
 summary {
   display: list-item;
 }
@@ -294,6 +296,7 @@ summary {
 /**
  * Add the correct display in IE 10+.
  */
+
 template {
   display: none;
 }
@@ -337,4 +340,38 @@ template {
 }
 .nav .nav-bottom ul li:hover {
   background-color: #b21515;
+
+header.home {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), url('../assets/appetizer-dark-delicious-326279.jpg');
+  background-size: auto, cover;
+  background-position: center, top;
+  display: flex;
+  padding: 10em 0 10em;
+}
+header.home .inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  margin: 0 auto;
+  padding-right: 45%;
+}
+header.home .inner h1 {
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5em;
+}
+header.home .inner p {
+  padding: 1em 0;
+  margin-top: 0;
+  width: 80%;
+}
+header.home .inner .cta-button {
+  background-color: #FFBF00;
+  padding: 1em;
+  border-radius: 0.5em;
+  width: 15em;
+  text-align: center;
+  cursor: pointer;
+}
+header.home .inner .cta-button:hover {
+  background-color: #E7B216;
 }
