@@ -1,0 +1,51 @@
+.nav {
+
+  a {
+    text-decoration: none;
+    color: @nav-bg-color;
+  }
+
+  .nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 100px;
+
+    .logo {
+      font-size: 120%;
+    }
+
+    .nav-login-signup {
+      span {
+        color: #A0A0A0;
+      }
+    }
+  }
+
+  .nav-bottom {
+    background-color: @nav-bg-color;
+
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0 50px;
+      
+      a {
+        color: white;
+        text-transform: uppercase;
+        font-size: 90%;
+      }
+
+      li {
+        padding: 15px;
+      }
+
+      li:hover {
+        background-color: darken(@nav-bg-color, 10%);
+      }
+    }
+  }
+
+}
+
+
