@@ -326,8 +326,10 @@ template {
   display: none;
 }
 body,
-p {
+p,
+li {
   font-family: 'Hind Madurai', sans-serif;
+  font-size: 1.6rem;
 }
 h1,
 h2,
@@ -336,6 +338,12 @@ h4,
 h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 2.5rem;
 }
 .nav a {
   text-decoration: none;
