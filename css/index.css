@@ -457,10 +457,21 @@ footer .footer-top ul a {
   flex-direction: column;
   text-align: center;
 }
+.features .headline h2 {
+  border-bottom: 2px solid #FFBF00;
+  padding-bottom: 10px;
+}
 .features .keypoints {
   display: flex;
   justify-content: space-around;
   width: 80%;
+}
+.features .keypoints .card {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 1rem;
+  width: 34%;
+  margin-bottom: 20px;
 }
 .features .cta-button {
   background-color: #FFBF00;
