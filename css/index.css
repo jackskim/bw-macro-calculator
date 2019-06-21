@@ -413,3 +413,47 @@ header.home .inner .cta-button {
 header.home .inner .cta-button:hover {
   background-color: #E7B216;
 }
+/* =====================
+     TESTIMONIALS
+=======================*/
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.carousel .testimonial {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 60%;
+  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
+  padding: 50px;
+}
+.carousel .testimonial .testimonial-img {
+  display: flex;
+  align-items: center;
+}
+.carousel .testimonial .testimonial-img img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.carousel .testimonial .testimonial-text {
+  padding: 0 100px;
+}
+.carousel .testimonial .testimonial-text h2 {
+  font-size: 3.6rem;
+}
+.carousel .testimonial .testimonial-text p {
+  font-size: 1.8rem;
+}
+.carousel .testimonial .testimonial-text span {
+  font-size: 2.4rem;
+}
+.carousel .left-arrow,
+.carousel .right-arrow {
+  font-size: 7.2rem;
+  color: grey;
+  margin: 0 20px;
+  cursor: pointer;
+}
