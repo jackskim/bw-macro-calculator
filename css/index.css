@@ -472,6 +472,14 @@ footer .footer-top ul a {
   margin: 0 1rem;
   width: 34%;
   margin-bottom: 20px;
+  position: relative;
+  transition: 0.5s;
+}
+.features .keypoints .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px lightgrey;
+  background-color: #F1F1F1;
+  cursor: pointer;
 }
 .features .keypoints .card img {
   width: 100%;
