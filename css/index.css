@@ -345,6 +345,9 @@ h1 {
 h2 {
   font-size: 2.5rem;
 }
+h3 {
+  font-size: 2rem;
+}
 .nav a {
   text-decoration: none;
   color: #E01A1A;
@@ -398,10 +401,8 @@ header.home .inner {
 header.home .inner h1 {
   border-bottom: 1px solid white;
   padding-bottom: 0.5rem;
-  font-size: 3.2rem;
 }
 header.home .inner p {
-  font-size: 1.3rem;
   margin: 0 0 1rem;
   width: 70%;
 }
