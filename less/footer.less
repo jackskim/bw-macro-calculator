@@ -1,25 +1,22 @@
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @accent-color;
     color: white;
     
     .footer-top {
         display: flex;
-        background-color: @accent-color;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
         
         h4{
             font-weight: 300;
-            margin: 10px 0;
         }
-    }
-
-    .footer-bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 0.6rem;
-        background-color: @accent-color;
         
         ul {
+            font-size: 0.6rem;
             list-style: none;
             display: flex;
             justify-content: space-around;

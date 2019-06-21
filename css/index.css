@@ -419,30 +419,28 @@ header.home .inner .cta-button:hover {
   background-color: #E7B216;
 }
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFBF00;
   color: white;
 }
 footer .footer-top {
   display: flex;
-  background-color: #FFBF00;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
 footer .footer-top h4 {
   font-weight: 300;
-  margin: 10px 0;
 }
-footer .footer-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+footer .footer-top ul {
   font-size: 0.6rem;
-  background-color: #FFBF00;
-}
-footer .footer-bottom ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   width: 40%;
 }
-footer .footer-bottom ul a {
+footer .footer-top ul a {
   text-decoration: none;
 }
