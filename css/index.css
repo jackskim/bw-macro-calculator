@@ -444,3 +444,33 @@ footer .footer-top ul {
 footer .footer-top ul a {
   text-decoration: none;
 }
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem;
+}
+.features .headline {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  flex-direction: column;
+  text-align: center;
+}
+.features .keypoints {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.features .cta-button {
+  background-color: #FFBF00;
+  text-align: center;
+  text-shadow: 0 0 0.2rem #A0A0A0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 15rem;
+  cursor: pointer;
+}
+.features .cta-button:hover {
+  background-color: #E7B216;
+}
