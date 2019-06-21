@@ -430,6 +430,7 @@ footer .footer-top {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  padding-top: 10px;
 }
 footer .footer-top h4 {
   font-weight: 300;
@@ -442,7 +443,11 @@ footer .footer-top ul {
   width: 40%;
 }
 footer .footer-top ul a {
+  color: white;
   text-decoration: none;
+}
+footer .footer-top ul a:hover {
+  text-decoration: underline;
 }
 .features {
   display: flex;
@@ -477,7 +482,7 @@ footer .footer-top ul a {
 }
 .features .keypoints .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px lightgrey;
+  box-shadow: 0 0 5px #e0e0e0;
   background-color: #F1F1F1;
   cursor: pointer;
 }
@@ -486,13 +491,18 @@ footer .footer-top ul a {
   border-radius: 10px;
   box-shadow: 0 0 10px lightgrey;
 }
+.features .keypoints .card .learn-more {
+  position: absolute;
+  bottom: 5px;
+  color: #E01A1A;
+}
 .features .cta-button {
   background-color: #FFBF00;
   text-align: center;
   text-shadow: 0 0 0.2rem #A0A0A0;
   padding: 1rem;
   border-radius: 0.5rem;
-  width: 15rem;
+  width: 25rem;
   cursor: pointer;
 }
 .features .cta-button:hover {

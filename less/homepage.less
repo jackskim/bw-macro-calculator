@@ -33,7 +33,7 @@
 
             &:hover {
                 transform: scale(1.05);
-                box-shadow: 0 0 5px lightgrey;
+                box-shadow: 0 0 5px rgb(224, 224, 224);
                 background-color: #F1F1F1;
                 cursor: pointer;
             }
@@ -43,10 +43,16 @@
                 border-radius: 10px;
                 box-shadow: 0 0 10px lightgrey;
             }
+
+            .learn-more {
+                position: absolute;
+                bottom: 5px;
+                color: @nav-bg-color;
+            }
         }
     }
 
     .cta-button {
-        .button-mix;
+        .button-mix(25rem);
     }
 }
