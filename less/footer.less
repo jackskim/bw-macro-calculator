@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @accent-color;
+    color: white;
+    
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        padding-top: 10px;
+        
+        h4{
+            font-weight: 300;
+        }
+        
+        ul {
+            font-size: 0.6rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+
+            a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

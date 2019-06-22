@@ -384,7 +384,7 @@ header.home {
   background-size: auto, cover;
   background-position: center, top;
   display: flex;
-  padding: 10em 0 10em;
+  padding: 15rem 0 15rem;
 }
 header.home .inner {
   display: flex;
@@ -392,27 +392,119 @@ header.home .inner {
   max-width: 35%;
   margin: 0 auto;
   padding-right: 45%;
+  color: white;
 }
 header.home .inner h1 {
-  border-bottom: 1px solid black;
-  padding-bottom: 0.5em;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.5rem;
 }
 header.home .inner p {
-  padding: 1em 0;
-  margin-top: 0;
-  width: 80%;
+  margin: 0 0 1rem;
+  width: 70%;
 }
 header.home .inner .cta-button {
   background-color: #FFBF00;
-  padding: 1em;
-  border-radius: 0.5em;
-  width: 15em;
   text-align: center;
+  text-shadow: 0 0 0.2rem #A0A0A0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 15rem;
   cursor: pointer;
 }
 header.home .inner .cta-button:hover {
   background-color: #E7B216;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFBF00;
+  color: white;
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding-top: 10px;
+}
+footer .footer-top h4 {
+  font-weight: 300;
+}
+footer .footer-top ul {
+  font-size: 0.6rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+footer .footer-top ul a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-top ul a:hover {
+  text-decoration: underline;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem;
+}
+.features .headline {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  flex-direction: column;
+  text-align: center;
+}
+.features .headline h2 {
+  border-bottom: 2px solid #FFBF00;
+  padding-bottom: 10px;
+}
+.features .keypoints {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.features .keypoints .card {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 1rem;
+  width: 34%;
+  margin-bottom: 20px;
+  position: relative;
+  transition: 0.5s;
+}
+.features .keypoints .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #e0e0e0;
+  background-color: #F1F1F1;
+  cursor: pointer;
+}
+.features .keypoints .card img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px lightgrey;
+}
+.features .keypoints .card .learn-more {
+  position: absolute;
+  bottom: 5px;
+  color: #E01A1A;
+}
+.features .cta-button {
+  background-color: #FFBF00;
+  text-align: center;
+  text-shadow: 0 0 0.2rem #A0A0A0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 25rem;
+  cursor: pointer;
+}
+.features .cta-button:hover {
+  background-color: #E7B216;
+
 /* =====================
      TESTIMONIALS
 =======================*/
