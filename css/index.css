@@ -331,6 +331,9 @@ li {
   font-family: 'Hind Madurai', sans-serif;
   font-size: 1.6rem;
 }
+p {
+  line-height: 1.4;
+}
 h1,
 h2,
 h3,
