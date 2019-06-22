@@ -585,10 +585,9 @@ footer .footer-top ul a:hover {
 header.about-home {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/about-header.jpg');
   background-position: center, center;
-  height: 35vh;
+  height: 30vh;
 }
 header.about-home .inner {
-  align-items: flex-end;
   max-width: 100%;
   padding-left: 25%;
   padding-right: 0;
