@@ -414,7 +414,6 @@ header.home .inner .cta-button {
 header.home .inner .cta-button:hover {
   background-color: #E7B216;
 }
-
 footer {
   display: flex;
   flex-direction: column;
@@ -504,7 +503,7 @@ footer .footer-top ul a:hover {
 }
 .features .cta-button:hover {
   background-color: #E7B216;
-
+}
 /* =====================
      TESTIMONIALS
 =======================*/
