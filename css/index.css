@@ -345,6 +345,9 @@ h1 {
 h2 {
   font-size: 2.5rem;
 }
+h3 {
+  font-size: 2rem;
+}
 .nav a {
   text-decoration: none;
   color: #E01A1A;
@@ -354,9 +357,6 @@ h2 {
   align-items: center;
   justify-content: space-between;
   margin: 0 100px;
-}
-.nav .nav-top .logo {
-  font-size: 120%;
 }
 .nav .nav-top .nav-login-signup span {
   color: #A0A0A0;
@@ -372,16 +372,15 @@ h2 {
 .nav .nav-bottom ul a {
   color: white;
   text-transform: uppercase;
-  font-size: 90%;
 }
 .nav .nav-bottom ul li {
-  padding: 15px;
+  padding: 12px;
 }
 .nav .nav-bottom ul li:hover {
   background-color: #b21515;
 }
 header.home {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), url('../assets/appetizer-dark-delicious-326279.jpg');
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), url('../assets/home-header.jpg');
   background-size: auto, cover;
   background-position: center, top;
   display: flex;
@@ -413,4 +412,60 @@ header.home .inner .cta-button {
 }
 header.home .inner .cta-button:hover {
   background-color: #E7B216;
+}
+/* =====================
+     TESTIMONIALS
+=======================*/
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.carousel .testimonial {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 55%;
+  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
+  padding: 30px;
+}
+.carousel .testimonial .testimonial-img {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.carousel .testimonial .testimonial-img img {
+  width: 100%;
+  height: auto;
+}
+.carousel .testimonial .testimonial-text {
+  margin: 0 50px;
+  max-width: 50%;
+  height: 45vh;
+  position: relative;
+}
+.carousel .testimonial .testimonial-text h2 {
+  font-size: 3.2rem;
+}
+.carousel .testimonial .testimonial-text p {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.carousel .testimonial .testimonial-text span {
+  display: block;
+  font-size: 2.4rem;
+  text-align: right;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.carousel .left-arrow,
+.carousel .right-arrow {
+  font-size: 7.2rem;
+  color: #d3d3d3;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.carousel .hide {
+  display: none;
 }
