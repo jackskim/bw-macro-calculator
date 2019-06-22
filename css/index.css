@@ -476,7 +476,7 @@ footer .footer-top ul a:hover {
   background-color: #E7B216;
 }
 /* =====================
-     TESTIMONIALS
+        FEATURES
  ======================= */
 .features {
   display: flex;
@@ -569,4 +569,16 @@ footer .footer-top ul a:hover {
 }
 .carousel .hide {
   display: none;
+}
+/* =====================
+        SIGN UP
+ ======================= */
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.sign-up .headline {
+  margin-bottom: 30px;
 }
