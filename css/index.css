@@ -414,6 +414,62 @@ header.home .inner .cta-button {
 header.home .inner .cta-button:hover {
   background-color: #E7B216;
 }
+/* =====================
+     CAROUSEL
+=======================*/
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.carousel .content {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 55%;
+  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
+  padding: 30px;
+}
+.carousel .content .content-img {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.carousel .content .content-img img {
+  width: 100%;
+  height: auto;
+}
+.carousel .content .content-text {
+  margin: 0 50px;
+  max-width: 50%;
+  height: 45vh;
+  position: relative;
+}
+.carousel .content .content-text h2 {
+  font-size: 3.2rem;
+}
+.carousel .content .content-text p {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.carousel .content .content-text span {
+  display: block;
+  font-size: 2.4rem;
+  text-align: right;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.carousel .left-arrow,
+.carousel .right-arrow {
+  font-size: 7.2rem;
+  color: #d3d3d3;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.carousel .hide {
+  display: none;
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -503,62 +559,6 @@ footer .footer-top ul a:hover {
 }
 .features .cta-button:hover {
   background-color: #E7B216;
-}
-/* =====================
-     TESTIMONIALS
-=======================*/
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-}
-.carousel .testimonial {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 55%;
-  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
-  padding: 30px;
-}
-.carousel .testimonial .testimonial-img {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-.carousel .testimonial .testimonial-img img {
-  width: 100%;
-  height: auto;
-}
-.carousel .testimonial .testimonial-text {
-  margin: 0 50px;
-  max-width: 50%;
-  height: 45vh;
-  position: relative;
-}
-.carousel .testimonial .testimonial-text h2 {
-  font-size: 3.2rem;
-}
-.carousel .testimonial .testimonial-text p {
-  font-size: 2rem;
-  line-height: 1.4;
-}
-.carousel .testimonial .testimonial-text span {
-  display: block;
-  font-size: 2.4rem;
-  text-align: right;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-.carousel .left-arrow,
-.carousel .right-arrow {
-  font-size: 7.2rem;
-  color: #d3d3d3;
-  margin: 0 20px;
-  cursor: pointer;
-}
-.carousel .hide {
-  display: none;
 }
 .food-prep-header {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(../assets/food-prep-header.jpg);
