@@ -560,3 +560,38 @@ footer .footer-top ul a:hover {
 .carousel .hide {
   display: none;
 }
+.food-prep-header {
+  background-image: url(../assets/food-prep-header.jpg);
+  background-size: auto, cover;
+  background-position: center, top;
+  display: flex;
+  padding: 15rem 0 15rem;
+}
+.food-prep-header .inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  margin: 0 auto;
+  padding-right: 45%;
+  color: white;
+}
+.food-prep-header .inner h1 {
+  border-bottom: 1px solid white;
+  padding-bottom: 0.5rem;
+}
+.food-prep-header .inner p {
+  margin: 0 0 1rem;
+  width: 70%;
+}
+.food-prep-header .inner .cta-button {
+  background-color: #FFBF00;
+  text-align: center;
+  text-shadow: 0 0 0.2rem #A0A0A0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 15rem;
+  cursor: pointer;
+}
+.food-prep-header .inner .cta-button:hover {
+  background-color: #E7B216;
+}
