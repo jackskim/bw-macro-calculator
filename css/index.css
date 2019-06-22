@@ -582,3 +582,18 @@ footer .footer-top ul a:hover {
 .sign-up .headline {
   margin-bottom: 30px;
 }
+header.about-home {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/about-header.jpg');
+  background-position: center, center;
+  height: 35vh;
+}
+header.about-home .inner {
+  align-items: flex-end;
+  max-width: 100%;
+  padding-left: 25%;
+  padding-right: 0;
+}
+header.about-home .inner h1 {
+  font-size: 6rem;
+  margin-top: 50px;
+}
