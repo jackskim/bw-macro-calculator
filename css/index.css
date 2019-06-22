@@ -606,3 +606,13 @@ footer .footer-top ul a:hover {
 /* =====================
     FOOD-PREP CAROUSEL
 =======================*/
+.section-recipes .carousel .content-img {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+}
+.section-recipes .carousel .content-img img {
+  width: 100%;
+  height: auto;
+}
