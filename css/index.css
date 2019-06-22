@@ -501,6 +501,9 @@ footer .footer-top ul a {
 footer .footer-top ul a:hover {
   text-decoration: underline;
 }
+/* =====================
+     FEATURES CONTENT
+=======================*/
 .features {
   display: flex;
   flex-direction: column;
@@ -560,6 +563,9 @@ footer .footer-top ul a:hover {
 .features .cta-button:hover {
   background-color: #E7B216;
 }
+/* =====================
+     FOOD-PREP HEADER
+=======================*/
 .food-prep-header {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(../assets/food-prep-header.jpg);
   background-size: auto, cover;
@@ -597,3 +603,6 @@ footer .footer-top ul a:hover {
 .food-prep-header .inner .cta-button:hover {
   background-color: #E7B216;
 }
+/* =====================
+    FOOD-PREP CAROUSEL
+=======================*/
