@@ -596,3 +596,14 @@ header.about-home .inner h1 {
   font-size: 6rem;
   margin-top: 50px;
 }
+.how-it-works,
+.membership-features {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+}
+.how-it-works {
+  margin-top: 40px;
+}
