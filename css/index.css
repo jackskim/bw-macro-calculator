@@ -688,12 +688,20 @@ footer .footer-top ul a:hover {
   margin: 0 auto;
 }
 .tabs span {
-  background: #d3d3d3;
+  background: #f0f0f0;
   text-align: center;
   padding: 0.5rem 1rem;
   width: 10rem;
   cursor: pointer;
   margin: 1rem 0;
+}
+.tabs span:hover {
+  background: #a0a0a0;
+  text-decoration: underline;
+}
+.tabs span.selected {
+  background: #d3d3d3;
+  text-decoration: underline;
 }
 .cards {
   display: flex;
