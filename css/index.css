@@ -430,7 +430,19 @@ header.home .inner .cta-button:hover {
 }
 @media (max-width: 500px) {
   header.home {
-    background-position: center, center;
+    padding: 10rem 0 20rem;
+    height: 60vh;
+  }
+  header.home .inner {
+    max-width: 45%;
+    padding-right: 30%;
+  }
+  header.home .inner h1 {
+    font-size: 4.2rem;
+  }
+  header.home .inner p {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 /* =====================
