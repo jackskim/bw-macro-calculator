@@ -43,15 +43,16 @@
 
   <!-- TABS -->
   <div class="tabs">
-    <span>Breakfast</span>
-    <span>Lunch/Dinner</span>
-    <span>Snack</span>
+    <span data-meal="all">All</span>
+    <span data-meal="breakfast">Breakfast</span>
+    <span data-meal="lunch-dinner">Lunch/Dinner</span>
+    <span data-meal="snack">Snack</span>
   </div>
 
   <!-- CAROUSEL CONTENT -->
   <section class="section-recipes">
     <div class="cards">
-      <div class="content hide">
+      <div class="content hide" data-meal="lunch-dinner">
           <img src="./assets/food-prep/food-prep1.jpg" alt="bowl of chicken dish">  
           <div class="content-text">
             <h2>Chicken and Veggies</h2>
@@ -65,7 +66,7 @@
             </span>
           </div>
       </div>
-      <div class="content hide">
+      <div class="content hide" data-meal="lunch-dinner">
           <img src="./assets/food-prep/food-prep2.jpg" alt="light chicken salad">  
           <div class="content-text">
             <h2>Light Chicken Salad</h2>
@@ -79,7 +80,7 @@
             </span>
           </div>
       </div>
-      <div class="content hide">
+      <div class="content hide" data-meal="lunch-dinner">
           <img src="./assets/food-prep/food-prep3.jpg" alt="bowl of chicken dish">  
           <div class="content-text">
             <h2>Baked Ranch Chicken</h2>
@@ -93,7 +94,7 @@
             </span>
           </div>
       </div>
-      <div class="content hide">
+      <div class="content hide" data-meal="breakfast">
           <img src="./assets/food-prep/food-prep4.jpg" alt="bowl of chicken dish">  
           <div class="content-text">
             <h2>Homemade Oatmeal</h2>
@@ -107,7 +108,7 @@
             </span>
           </div>
       </div>
-      <div class="content hide">
+      <div class="content hide" data-meal="snack">
           <img src="./assets/food-prep/food-prep5.jpg" alt="granola bar">  
           <div class="content-text">
             <h2>Granola Bar</h2>
