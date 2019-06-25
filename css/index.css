@@ -404,6 +404,12 @@ header.home {
   display: flex;
   padding: 15rem 0 15rem;
 }
+@media (max-width: 500px) {
+  header.home {
+    padding: 10rem 0 20rem;
+    height: 60vh;
+  }
+}
 header.home .inner {
   display: flex;
   flex-direction: column;
@@ -412,13 +418,30 @@ header.home .inner {
   padding-right: 45%;
   color: white;
 }
+@media (max-width: 500px) {
+  header.home .inner {
+    max-width: 45%;
+    padding-right: 30%;
+  }
+}
 header.home .inner h1 {
   border-bottom: 1px solid white;
   padding-bottom: 0.5rem;
 }
+@media (max-width: 500px) {
+  header.home .inner h1 {
+    font-size: 4.2rem;
+  }
+}
 header.home .inner p {
   margin: 0 0 1rem;
   width: 70%;
+}
+@media (max-width: 500px) {
+  header.home .inner p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 header.home .inner .cta-button {
   background-color: #FFBF00;
@@ -431,23 +454,6 @@ header.home .inner .cta-button {
 }
 header.home .inner .cta-button:hover {
   background-color: #E7B216;
-}
-@media (max-width: 500px) {
-  header.home {
-    padding: 10rem 0 20rem;
-    height: 60vh;
-  }
-  header.home .inner {
-    max-width: 45%;
-    padding-right: 30%;
-  }
-  header.home .inner h1 {
-    font-size: 4.2rem;
-  }
-  header.home .inner p {
-    width: 100%;
-    margin-bottom: 30px;
-  }
 }
 /* =====================
      CAROUSEL
