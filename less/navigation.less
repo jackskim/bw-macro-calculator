@@ -16,6 +16,10 @@
         color: #A0A0A0;
       }
     }
+
+    @media (max-width: @mobile) {
+      margin: 0 20px;
+    }
   }
 
   .nav-bottom {
@@ -25,6 +29,10 @@
       list-style: none;
       display: flex;
       margin: 0 50px;
+
+      @media (max-width: @mobile) {
+        margin: 0 1%;
+      }
       
       a {
         color: white;
@@ -33,6 +41,10 @@
 
       li {
         padding: 12px;
+
+        @media(max-width: @mobile) {
+          font-size: 1.4rem;
+        }
       }
 
       li:hover {
@@ -43,21 +55,3 @@
 
 }
 
-@media (max-width: @mobile) {
-  .nav {
-    .nav-top {
-      margin: 0 20px;
-    }
-
-    .nav-bottom {
-      ul {
-        margin: 0 1%;
-
-        li {
-          font-size: 1.4rem;
-        }
-      }
-    }
-  }
-  
-}

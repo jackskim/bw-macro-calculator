@@ -364,6 +364,11 @@ h3 {
 .nav .nav-top .nav-login-signup span {
   color: #A0A0A0;
 }
+@media (max-width: 500px) {
+  .nav .nav-top {
+    margin: 0 20px;
+  }
+}
 .nav .nav-bottom {
   background-color: #E01A1A;
 }
@@ -372,6 +377,11 @@ h3 {
   display: flex;
   margin: 0 50px;
 }
+@media (max-width: 500px) {
+  .nav .nav-bottom ul {
+    margin: 0 1%;
+  }
+}
 .nav .nav-bottom ul a {
   color: white;
   text-transform: uppercase;
@@ -379,19 +389,13 @@ h3 {
 .nav .nav-bottom ul li {
   padding: 12px;
 }
-.nav .nav-bottom ul li:hover {
-  background-color: #b21515;
-}
 @media (max-width: 500px) {
-  .nav .nav-top {
-    margin: 0 20px;
-  }
-  .nav .nav-bottom ul {
-    margin: 0 1%;
-  }
   .nav .nav-bottom ul li {
     font-size: 1.4rem;
   }
+}
+.nav .nav-bottom ul li:hover {
+  background-color: #b21515;
 }
 header.home {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../assets/home-header.jpg');
