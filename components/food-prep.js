@@ -14,7 +14,7 @@ class TabLink {
     }
   
     selectTab = () => {
-      const tabs = document.querySelectorAll('.tab');
+      const tabs = document.querySelectorAll('.tabs span');
       tabs.forEach(tab => tab.classList.remove('selected'));
       const cards = document.querySelectorAll('.card');
       cards.forEach(card => card.style.display = 'none');
@@ -32,4 +32,4 @@ class TabLink {
     }
   }
   
-  document.querySelector('.tabs').children.forEach(tab => new TabLink(tab));
+  document.querySelectorAll('.tabs span').forEach(tab => new TabLink(tab));
