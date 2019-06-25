@@ -456,13 +456,19 @@ header.home .inner .cta-button:hover {
   background-color: #E7B216;
 }
 /* =====================
-     CAROUSEL
-=======================*/
+        CAROUSEL
+ ======================= */
 .carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
+  position: relative;
+}
+@media (max-width: 500px) {
+  .carousel {
+    margin-bottom: 100px;
+  }
 }
 .carousel .content {
   display: flex;
@@ -470,6 +476,12 @@ header.home .inner .cta-button:hover {
   max-width: 55%;
   box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
   padding: 30px;
+}
+@media (max-width: 500px) {
+  .carousel .content {
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
 .carousel .content .content-img {
   display: flex;
@@ -486,12 +498,29 @@ header.home .inner .cta-button:hover {
   height: 45vh;
   position: relative;
 }
+@media (max-width: 500px) {
+  .carousel .content .content-text {
+    height: 35vh;
+    max-width: 100%;
+    margin: 0 10px;
+  }
+}
 .carousel .content .content-text h2 {
   font-size: 3.2rem;
+}
+@media (max-width: 500px) {
+  .carousel .content .content-text h2 {
+    font-size: 2.4rem;
+  }
 }
 .carousel .content .content-text p {
   font-size: 2rem;
   line-height: 1.4;
+}
+@media (max-width: 500px) {
+  .carousel .content .content-text p {
+    font-size: 1.6rem;
+  }
 }
 .carousel .content .content-text span {
   display: block;
@@ -501,12 +530,31 @@ header.home .inner .cta-button:hover {
   right: 0px;
   bottom: 0px;
 }
+@media (max-width: 500px) {
+  .carousel .content .content-text span {
+    font-size: 1.8rem;
+  }
+}
 .carousel .left-arrow,
 .carousel .right-arrow {
   font-size: 7.2rem;
   color: #d3d3d3;
   margin: 0 20px;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .carousel .left-arrow {
+    position: absolute;
+    left: 10px;
+    bottom: -80px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .right-arrow {
+    position: absolute;
+    right: 10px;
+    bottom: -80px;
+  }
 }
 .carousel .hide {
   display: none;
@@ -640,103 +688,6 @@ footer .footer-top ul a:hover {
   position: absolute;
   bottom: 5px;
   color: #E01A1A;
-}
-/* =====================
-     TESTIMONIALS
- ======================= */
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-}
-@media (max-width: 500px) {
-  .carousel {
-    padding: 1%;
-    margin-bottom: 50px;
-  }
-}
-.carousel .content {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 55%;
-  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
-  padding: 30px;
-}
-@media (max-width: 500px) {
-  .carousel .content {
-    flex-direction: column;
-    max-width: 100%;
-  }
-}
-.carousel .content .content-img {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-.carousel .content .content-img img {
-  width: 100%;
-  height: auto;
-}
-.carousel .content .content-text {
-  margin: 0 50px;
-  max-width: 50%;
-  height: 45vh;
-  position: relative;
-}
-@media (max-width: 500px) {
-  .carousel .content .content-text {
-    height: 40vh;
-    max-width: 100%;
-    margin: 0 10px;
-  }
-}
-.carousel .content .content-text h2 {
-  font-size: 3.2rem;
-}
-@media (max-width: 500px) {
-  .carousel .content .content-text h2 {
-    font-size: 2.4rem;
-  }
-}
-.carousel .content .content-text p {
-  font-size: 2rem;
-  line-height: 1.4;
-}
-@media (max-width: 500px) {
-  .carousel .content .content-text p {
-    font-size: 1.6rem;
-  }
-}
-.carousel .content .content-text span {
-  display: block;
-  font-size: 2.4rem;
-  text-align: right;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-@media (max-width: 500px) {
-  .carousel .content .content-text span {
-    font-size: 1.8rem;
-  }
-}
-.carousel .left-arrow,
-.carousel .right-arrow {
-  font-size: 7.2rem;
-  color: #d3d3d3;
-  margin: 0 20px;
-  cursor: pointer;
-}
-@media (max-width: 500px) {
-  .carousel .left-arrow,
-  .carousel .right-arrow {
-    font-size: 5.5rem;
-    margin: 0 10px;
-  }
-}
-.carousel .hide {
-  display: none;
 }
 /* =====================
         SIGN UP

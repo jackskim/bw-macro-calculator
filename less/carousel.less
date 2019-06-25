@@ -1,66 +1,110 @@
 /* =====================
-     CAROUSEL
-=======================*/
+        CAROUSEL
+ ======================= */
 .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  position: relative;
+
+  @media(max-width: @mobile) {
+    margin-bottom: 100px;
+  }
+
+
+  .content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
+    justify-content: space-evenly;
+    max-width: 55%;
+    box-shadow: 0 0 14px 2px rgba(0,0,0,.31);
+    padding: 30px;
+
+    @media(max-width: @mobile) {
+      flex-direction: column;
+      max-width: 100%;
+    }
   
-    .content {
+    .content-img {
       display: flex;
-      justify-content: space-evenly;
-      max-width: 55%;
-      box-shadow: 0 0 14px 2px rgba(0,0,0,.31);
-      padding: 30px;
+      align-items: center;
+      margin: 0;
     
-      .content-img {
-        display: flex;
-        align-items: center;
-        margin: 0;
-      
-        img {
-          width: 100%;
-          height: auto;
-        }
+      img {
+        width: 100%;
+        height: auto;
       }
-  
-      .content-text {
-        margin: 0 50px;
-        max-width: 50%;
-        height: 45vh;
-        position: relative;
-  
-        h2 {
-          font-size: 3.2rem;
-        }
-  
-        p {
-          font-size: 2.0rem;
-          line-height: 1.4;
-        }
-  
-        span {
-          display: block;
+    }
+
+    .content-text {
+      margin: 0 50px;
+      max-width: 50%;
+      height: 45vh;
+      position: relative;
+
+      @media( max-width: @mobile) {
+        height: 35vh;
+        max-width: 100%;
+        margin: 0 10px;
+      }
+
+      h2 {
+        font-size: 3.2rem;
+        @media(max-width: @mobile) {
           font-size: 2.4rem;
-          text-align: right;
-          position: absolute;
-          right: 0px;
-          bottom: 0px;
+        }
+      }
+
+      p {
+        font-size: 2.0rem;
+        line-height: 1.4;
+        @media(max-width: @mobile) {
+          font-size: 1.6rem;
+        }
+      }
+
+      span {
+        display: block;
+        font-size: 2.4rem;
+        text-align: right;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+
+        @media(max-width: @mobile) {
+          font-size: 1.8rem;
         }
       }
     }
-  
-    .left-arrow,
-    .right-arrow {
-      font-size: 7.2rem;
-      color: #d3d3d3;
-      margin: 0 20px;
-      cursor: pointer;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    font-size: 7.2rem;
+    color: @arrow-color;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+
+  .left-arrow {
+    @media(max-width: @mobile) {
+      position: absolute;
+      left: 10px;
+      bottom: -80px;
     }
   }
-  
-  .carousel .hide {
-    display: none;
+
+  .right-arrow {
+    @media(max-width: @mobile) {
+      position: absolute;
+      right: 10px;
+      bottom: -80px;
+    }
   }
-  
+
+}
+
+.carousel .hide {
+  display: none;
+}
+
