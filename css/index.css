@@ -639,36 +639,47 @@ footer .footer-top ul a:hover {
   align-items: center;
   padding: 5%;
 }
-.carousel .testimonial {
+@media (max-width: 500px) {
+  .carousel {
+    padding: 1%;
+  }
+}
+.carousel .content {
   display: flex;
   justify-content: space-evenly;
   max-width: 55%;
   box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
   padding: 30px;
 }
-.carousel .testimonial .testimonial-img {
+@media (max-width: 500px) {
+  .carousel .content {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+.carousel .content .content-img {
   display: flex;
   align-items: center;
   margin: 0;
 }
-.carousel .testimonial .testimonial-img img {
+.carousel .content .content-img img {
   width: 100%;
   height: auto;
 }
-.carousel .testimonial .testimonial-text {
+.carousel .content .content-text {
   margin: 0 50px;
   max-width: 50%;
   height: 45vh;
   position: relative;
 }
-.carousel .testimonial .testimonial-text h2 {
+.carousel .content .content-text h2 {
   font-size: 3.2rem;
 }
-.carousel .testimonial .testimonial-text p {
+.carousel .content .content-text p {
   font-size: 2rem;
   line-height: 1.4;
 }
-.carousel .testimonial .testimonial-text span {
+.carousel .content .content-text span {
   display: block;
   font-size: 2.4rem;
   text-align: right;

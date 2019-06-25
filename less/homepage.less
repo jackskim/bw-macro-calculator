@@ -92,14 +92,24 @@
   align-items: center;
   padding: 5%;
 
-  .testimonial {
+  @media(max-width: @mobile) {
+    padding: 1%;
+  }
+
+
+  .content {
     display: flex;
     justify-content: space-evenly;
     max-width: 55%;
     box-shadow: 0 0 14px 2px rgba(0,0,0,.31);
     padding: 30px;
+
+    @media(max-width: @mobile) {
+      flex-direction: column;
+      max-width: 100%;
+    }
   
-    .testimonial-img {
+    .content-img {
       display: flex;
       align-items: center;
       margin: 0;
@@ -110,7 +120,7 @@
       }
     }
 
-    .testimonial-text {
+    .content-text {
       margin: 0 50px;
       max-width: 50%;
       height: 45vh;
