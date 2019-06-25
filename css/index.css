@@ -679,17 +679,40 @@ footer .footer-top ul a:hover {
   background-color: #E7B216;
 }
 /* =====================
-    FOOD-PREP CAROUSEL
+    FOOD-PREP CONTENT
 =======================*/
-.section-recipes .carousel .content-img {
-  position: relative;
-  width: 240px;
-  height: 240px;
-  overflow: hidden;
+.tabs {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
-.section-recipes .carousel .content-img img {
-  width: 100%;
-  height: auto;
+.tabs span {
+  background: #d3d3d3;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-flow: row wrap;
+  width: 90%;
+}
+.cards .content {
+  display: flex;
+  background: #f0f0f0;
+  width: 45%;
+  padding: 2rem;
+  margin: 1rem;
+}
+.cards img {
+  position: relative;
+  max-width: 25rem;
+  margin-right: 5rem;
 }
 header.about-home {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/about-header.jpg');
