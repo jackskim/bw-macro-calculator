@@ -94,6 +94,7 @@
 
   @media(max-width: @mobile) {
     padding: 1%;
+    margin-bottom: 50px;
   }
 
 
@@ -126,13 +127,25 @@
       height: 45vh;
       position: relative;
 
+      @media( max-width: @mobile) {
+        height: 40vh;
+        max-width: 100%;
+        margin: 0 10px;
+      }
+
       h2 {
         font-size: 3.2rem;
+        @media(max-width: @mobile) {
+          font-size: 2.4rem;
+        }
       }
 
       p {
         font-size: 2.0rem;
         line-height: 1.4;
+        @media(max-width: @mobile) {
+          font-size: 1.6rem;
+        }
       }
 
       span {
@@ -142,6 +155,10 @@
         position: absolute;
         right: 0px;
         bottom: 0px;
+
+        @media(max-width: @mobile) {
+          font-size: 1.8rem;
+        }
       }
     }
   }
@@ -152,6 +169,11 @@
     color: @arrow-color;
     margin: 0 20px;
     cursor: pointer;
+
+    @media(max-width: @mobile)  {
+      font-size: 5.5rem;
+      margin: 0 10px;
+    }
   }
 }
 
@@ -169,7 +191,14 @@
   align-items: center;
   margin-bottom: 5%;
 
+  @media(max-width: @mobile) {
+    margin-bottom: 15%;
+  }
+
   .headline {
     margin-bottom: 30px;
+    @media(max-width: @mobile) {
+      margin-bottom: 20px;
+    }
   }
 }
