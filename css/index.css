@@ -387,7 +387,10 @@ h3 {
     margin: 0 20px;
   }
   .nav .nav-bottom ul {
-    margin: 0 20px;
+    margin: 0 1%;
+  }
+  .nav .nav-bottom ul li {
+    font-size: 1.4rem;
   }
 }
 header.home {
@@ -424,6 +427,11 @@ header.home .inner .cta-button {
 }
 header.home .inner .cta-button:hover {
   background-color: #E7B216;
+}
+@media (max-width: 500px) {
+  header.home {
+    background-position: center, center;
+  }
 }
 /* =====================
      CAROUSEL
