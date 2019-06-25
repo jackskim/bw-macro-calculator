@@ -417,6 +417,62 @@ header.home .inner .cta-button {
 header.home .inner .cta-button:hover {
   background-color: #E7B216;
 }
+/* =====================
+     CAROUSEL
+=======================*/
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.carousel .content {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 55%;
+  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
+  padding: 30px;
+}
+.carousel .content .content-img {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.carousel .content .content-img img {
+  width: 100%;
+  height: auto;
+}
+.carousel .content .content-text {
+  margin: 0 50px;
+  max-width: 50%;
+  height: 45vh;
+  position: relative;
+}
+.carousel .content .content-text h2 {
+  font-size: 3.2rem;
+}
+.carousel .content .content-text p {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.carousel .content .content-text span {
+  display: block;
+  font-size: 2.4rem;
+  text-align: right;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.carousel .left-arrow,
+.carousel .right-arrow {
+  font-size: 7.2rem;
+  color: #d3d3d3;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.carousel .hide {
+  display: none;
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -447,6 +503,15 @@ footer .footer-top ul a {
 }
 footer .footer-top ul a:hover {
   text-decoration: underline;
+}
+/* =====================
+     FEATURES CONTENT
+=======================*/
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem;
 }
 /* =====================
       REUSABLES
@@ -515,6 +580,13 @@ footer .footer-top ul a:hover {
   color: #E01A1A;
 }
 /* =====================
+     FOOD-PREP HEADER
+=======================*/
+.food-prep-header {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(../assets/food-prep-header.jpg);
+  background-size: auto, cover;
+  background-position: center;
+=======
      TESTIMONIALS
  ======================= */
 .carousel {
@@ -525,50 +597,50 @@ footer .footer-top ul a:hover {
 }
 .carousel .testimonial {
   display: flex;
-  justify-content: space-evenly;
-  max-width: 55%;
-  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
-  padding: 30px;
+  padding: 15rem 0 15rem;
 }
-.carousel .testimonial .testimonial-img {
+.food-prep-header .inner {
   display: flex;
   align-items: center;
-  margin: 0;
+  flex-direction: column;
+  max-width: 35%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 5px #646464;
 }
-.carousel .testimonial .testimonial-img img {
-  width: 100%;
-  height: auto;
+.food-prep-header .inner h1 {
+  border-bottom: 1px solid white;
+  padding-bottom: 0.5rem;
 }
-.carousel .testimonial .testimonial-text {
-  margin: 0 50px;
-  max-width: 50%;
-  height: 45vh;
-  position: relative;
+.food-prep-header .inner p {
+  margin: 0 0 1rem;
+  width: 70%;
 }
-.carousel .testimonial .testimonial-text h2 {
-  font-size: 3.2rem;
-}
-.carousel .testimonial .testimonial-text p {
-  font-size: 2rem;
-  line-height: 1.4;
-}
-.carousel .testimonial .testimonial-text span {
-  display: block;
-  font-size: 2.4rem;
-  text-align: right;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-.carousel .left-arrow,
-.carousel .right-arrow {
-  font-size: 7.2rem;
-  color: #d3d3d3;
-  margin: 0 20px;
+.food-prep-header .inner .cta-button {
+  background-color: #FFBF00;
+  text-align: center;
+  text-shadow: 0 0 0.2rem #A0A0A0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 15rem;
   cursor: pointer;
 }
-.carousel .hide {
-  display: none;
+.food-prep-header .inner .cta-button:hover {
+  background-color: #E7B216;
+}
+/* =====================
+    FOOD-PREP CAROUSEL
+=======================*/
+.section-recipes .carousel .content-img {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+}
+.section-recipes .carousel .content-img img {
+  width: 100%;
+  height: auto;
 }
 /* =====================
         SIGN UP

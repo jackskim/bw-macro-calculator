@@ -7,8 +7,8 @@ class Carousel {
     this.leftArrow = document.querySelector('.left-arrow');
     this.rightArrow = document.querySelector('.right-arrow');
 
-    // Get the testimonials
-    this.testimonials = document.querySelectorAll('.carousel .testimonial');
+    // Get all the content
+    this.allContent = document.querySelectorAll('.carousel .content');
 
     // Index tracker
     this.index = 0;
@@ -17,12 +17,12 @@ class Carousel {
     this.leftArrow.addEventListener('click', this.previous.bind(this)); 
     this.rightArrow.addEventListener('click', this.next.bind(this));
 
-    // Display first testimonial as a default
-    this.testimonials[this.index].classList.remove('hide');
+    // Display first content as a default
+    this.allContent[this.index].classList.remove('hide');
   }
 
   increaseIdx(){
-    if(this.index === this.testimonials.length-1) {
+    if(this.index === this.allContent.length-1) {
       this.index = 0;
     } else {
       this.index = this.index + 1;
@@ -31,44 +31,45 @@ class Carousel {
 
   decreaseIdx(){
     if(this.index === 0) {
-      this.index = this.testimonials.length -1;
+      this.index = this.allContent.length -1;
     } else {
       this.index = this.index - 1;
     }
   }
 
   hideAll(){
-    this.testimonials.forEach( testimonial => testimonial.classList.add('hide'));
+    this.allContent.forEach( content => content.classList.add('hide'));
   }
 
   next(){
-    // Hide all testimonials
+    // Hide all content
     this.hideAll();
 
     this.increaseIdx();
 
-    // Get the correct testimonial
-    this.testimonial = this.testimonials[this.index]; 
+    // Get the correct content
+    this.content = this.allContent[this.index]; 
 
     // Display it
-    this.testimonial.classList.remove('hide');
+    this.content.classList.remove('hide');
   }
 
   previous(){
-    // Hide all testimonials
+    // Hide all content
     this.hideAll();
 
     this.decreaseIdx();
 
-    // Get the correct testimonial
-    this.testimonial = this.testimonials[this.index];
+    // Get the correct content
+    this.content = this.allContent[this.index];
 
     // Display It
-    this.testimonial.classList.remove('hide');
+    this.content.classList.remove('hide');
   }
 
 }
 
 let testimonialCarousel = new Carousel(document.querySelector('.section-testimonials .carousel'));
+let recipeCarousel = new Carousel(document.querySelector('.section-recipes .carousel'))
 
 

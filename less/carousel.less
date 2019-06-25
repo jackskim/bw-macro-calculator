@@ -1,0 +1,66 @@
+/* =====================
+     CAROUSEL
+=======================*/
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  
+    .content {
+      display: flex;
+      justify-content: space-evenly;
+      max-width: 55%;
+      box-shadow: 0 0 14px 2px rgba(0,0,0,.31);
+      padding: 30px;
+    
+      .content-img {
+        display: flex;
+        align-items: center;
+        margin: 0;
+      
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+  
+      .content-text {
+        margin: 0 50px;
+        max-width: 50%;
+        height: 45vh;
+        position: relative;
+  
+        h2 {
+          font-size: 3.2rem;
+        }
+  
+        p {
+          font-size: 2.0rem;
+          line-height: 1.4;
+        }
+  
+        span {
+          display: block;
+          font-size: 2.4rem;
+          text-align: right;
+          position: absolute;
+          right: 0px;
+          bottom: 0px;
+        }
+      }
+    }
+  
+    .left-arrow,
+    .right-arrow {
+      font-size: 7.2rem;
+      color: #d3d3d3;
+      margin: 0 20px;
+      cursor: pointer;
+    }
+  }
+  
+  .carousel .hide {
+    display: none;
+  }
+  
