@@ -505,15 +505,6 @@ footer .footer-top ul a:hover {
   text-decoration: underline;
 }
 /* =====================
-     FEATURES CONTENT
-=======================*/
-.features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10rem;
-}
-/* =====================
       REUSABLES
  ======================= */
 .headline {
@@ -580,13 +571,6 @@ footer .footer-top ul a:hover {
   color: #E01A1A;
 }
 /* =====================
-     FOOD-PREP HEADER
-=======================*/
-.food-prep-header {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(../assets/food-prep-header.jpg);
-  background-size: auto, cover;
-  background-position: center;
-=======
      TESTIMONIALS
  ======================= */
 .carousel {
@@ -596,6 +580,71 @@ footer .footer-top ul a:hover {
   padding: 5%;
 }
 .carousel .testimonial {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 55%;
+  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
+  padding: 30px;
+}
+.carousel .testimonial .testimonial-img {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.carousel .testimonial .testimonial-img img {
+  width: 100%;
+  height: auto;
+}
+.carousel .testimonial .testimonial-text {
+  margin: 0 50px;
+  max-width: 50%;
+  height: 45vh;
+  position: relative;
+}
+.carousel .testimonial .testimonial-text h2 {
+  font-size: 3.2rem;
+}
+.carousel .testimonial .testimonial-text p {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.carousel .testimonial .testimonial-text span {
+  display: block;
+  font-size: 2.4rem;
+  text-align: right;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.carousel .left-arrow,
+.carousel .right-arrow {
+  font-size: 7.2rem;
+  color: #d3d3d3;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.carousel .hide {
+  display: none;
+}
+/* =====================
+        SIGN UP
+ ======================= */
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.sign-up .headline {
+  margin-bottom: 30px;
+}
+/* =====================
+     FOOD-PREP HEADER
+=======================*/
+.food-prep-header {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(../assets/food-prep-header.jpg);
+  background-size: auto, cover;
+  background-position: center;
   display: flex;
   padding: 15rem 0 15rem;
 }
@@ -641,18 +690,6 @@ footer .footer-top ul a:hover {
 .section-recipes .carousel .content-img img {
   width: 100%;
   height: auto;
-}
-/* =====================
-        SIGN UP
- ======================= */
-.sign-up {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5%;
-}
-.sign-up .headline {
-  margin-bottom: 30px;
 }
 header.about-home {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/about-header.jpg');
