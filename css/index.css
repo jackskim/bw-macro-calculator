@@ -682,10 +682,9 @@ footer .footer-top ul a:hover {
     FOOD-PREP CONTENT
 =======================*/
 .tabs {
-  width: 50%;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  width: 100%;
 }
 .tabs span {
   background: #f0f0f0;
@@ -696,7 +695,7 @@ footer .footer-top ul a:hover {
   margin: 1rem 0;
 }
 .tabs span:hover {
-  background: #a0a0a0;
+  background: #d3d3d3;
   text-decoration: underline;
 }
 .tabs span.selected {
