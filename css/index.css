@@ -553,6 +553,11 @@ footer .footer-top ul a:hover {
   text-align: center;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .headline {
+    width: 100%;
+  }
+}
 .headline h2 {
   border-bottom: 2px solid #FFBF00;
   padding-bottom: 10px;
@@ -576,12 +581,24 @@ footer .footer-top ul a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10rem;
+  padding: 5rem;
+}
+@media (max-width: 500px) {
+  .features {
+    padding: 5rem;
+  }
 }
 .features .keypoints {
   display: flex;
   justify-content: space-around;
   width: 80%;
+}
+@media (max-width: 500px) {
+  .features .keypoints {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 }
 .features .keypoints .card {
   padding: 20px;
@@ -591,6 +608,11 @@ footer .footer-top ul a:hover {
   margin-bottom: 20px;
   position: relative;
   transition: 0.5s;
+}
+@media (max-width: 500px) {
+  .features .keypoints .card {
+    width: 100%;
+  }
 }
 .features .keypoints .card:hover {
   transform: scale(1.05);
