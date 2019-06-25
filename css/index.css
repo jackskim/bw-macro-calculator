@@ -331,6 +331,9 @@ li {
   font-family: 'Hind Madurai', sans-serif;
   font-size: 1.6rem;
 }
+p {
+  line-height: 1.4;
+}
 h1,
 h2,
 h3,
@@ -445,22 +448,41 @@ footer .footer-top ul a {
 footer .footer-top ul a:hover {
   text-decoration: underline;
 }
-.features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10rem;
-}
-.features .headline {
+/* =====================
+      REUSABLES
+ ======================= */
+.headline {
   display: flex;
   align-items: center;
   width: 40%;
   flex-direction: column;
   text-align: center;
+  margin: 0 auto;
 }
-.features .headline h2 {
+.headline h2 {
   border-bottom: 2px solid #FFBF00;
   padding-bottom: 10px;
+}
+.cta-button {
+  background-color: #FFBF00;
+  text-align: center;
+  text-shadow: 0 0 0.2rem #A0A0A0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 25rem;
+  cursor: pointer;
+}
+.cta-button:hover {
+  background-color: #E7B216;
+}
+/* =====================
+        FEATURES
+ ======================= */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem;
 }
 .features .keypoints {
   display: flex;
@@ -492,21 +514,9 @@ footer .footer-top ul a:hover {
   bottom: 5px;
   color: #E01A1A;
 }
-.features .cta-button {
-  background-color: #FFBF00;
-  text-align: center;
-  text-shadow: 0 0 0.2rem #A0A0A0;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  width: 25rem;
-  cursor: pointer;
-}
-.features .cta-button:hover {
-  background-color: #E7B216;
-}
 /* =====================
      TESTIMONIALS
-=======================*/
+ ======================= */
 .carousel {
   display: flex;
   justify-content: center;
@@ -559,4 +569,65 @@ footer .footer-top ul a:hover {
 }
 .carousel .hide {
   display: none;
+}
+/* =====================
+        SIGN UP
+ ======================= */
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.sign-up .headline {
+  margin-bottom: 30px;
+}
+header.about-home {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/about-header.jpg');
+  background-position: center, center;
+  height: 30vh;
+}
+header.about-home .inner {
+  max-width: 100%;
+  padding-left: 25%;
+  padding-right: 0;
+}
+header.about-home .inner h1 {
+  font-size: 6rem;
+  margin-top: 50px;
+}
+.how-it-works,
+.membership-features {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.how-it-works {
+  width: 40%;
+}
+.membership-features {
+  width: 60%;
+}
+.membership-features .membership-features-content {
+  margin: 30px auto;
+}
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  padding: 2%;
+}
+.column i.fas,
+.column i.far {
+  color: #ffdf80;
+  margin-bottom: 20px;
+}
+.column p {
+  text-align: center;
 }

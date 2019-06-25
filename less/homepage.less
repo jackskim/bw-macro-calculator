@@ -1,22 +1,34 @@
+/* =====================
+      REUSABLES
+ ======================= */
+.headline {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+
+  h2 {
+    border-bottom: 2px solid @accent-color;
+    padding-bottom: 10px;
+  }
+}
+
+.cta-button {
+  .button-mix(25rem);
+}
+
+/* =====================
+        FEATURES
+ ======================= */
+
 .features {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10rem;
-
-    .headline {
-        display: flex;
-        align-items: center;
-        width: 40%;
-        flex-direction: column;
-        text-align: center;
-
-        h2 {
-            border-bottom: 2px solid @accent-color;
-            padding-bottom: 10px;
-        }
-    }
-
+    
     .keypoints {
         display: flex;
         justify-content: space-around;
@@ -51,15 +63,11 @@
             }
         }
     }
-
-    .cta-button {
-        .button-mix(25rem);
-    }
 }
 
 /* =====================
      TESTIMONIALS
-=======================*/
+ ======================= */
 .carousel {
   display: flex;
   justify-content: center;
@@ -113,7 +121,7 @@
   .left-arrow,
   .right-arrow {
     font-size: 7.2rem;
-    color: #d3d3d3;
+    color: @arrow-color;
     margin: 0 20px;
     cursor: pointer;
   }
@@ -122,3 +130,19 @@
 .carousel .hide {
   display: none;
 }
+
+/* =====================
+        SIGN UP
+ ======================= */
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+
+  .headline {
+    margin-bottom: 30px;
+  }
+}
+
