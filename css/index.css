@@ -826,6 +826,12 @@ header.about-home .inner h1 {
   color: #ffdf80;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .column i.fas,
+  .column i.far {
+    margin-top: 10px;
+  }
+}
 .column p {
   text-align: center;
 }
