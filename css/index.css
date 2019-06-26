@@ -718,7 +718,7 @@ i.fab {
 }
 @media (max-width: 500px) {
   .recipes-tabs .tabs span {
-    width: 8rem;
+    width: 9rem;
   }
 }
 .recipes-tabs .tabs span:hover {
@@ -736,6 +736,11 @@ i.fab {
   flex-flow: row wrap;
   width: 90%;
 }
+@media (max-width: 500px) {
+  .cards {
+    width: 95%;
+  }
+}
 .cards .content {
   display: flex;
   background: #f0f0f0;
@@ -743,6 +748,12 @@ i.fab {
   padding: 2rem;
   margin: 1rem;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .cards .content {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .cards img {
   position: relative;
