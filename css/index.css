@@ -664,6 +664,11 @@ i.fab {
   text-align: center;
   text-shadow: 1px 1px 5px #646464;
 }
+@media (max-width: 500px) {
+  .food-prep-header .inner {
+    max-width: 80%;
+  }
+}
 .food-prep-header .inner h1 {
   border-bottom: 1px solid white;
   padding-bottom: 0.5rem;
