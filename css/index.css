@@ -770,9 +770,20 @@ i.fab {
   justify-content: space-around;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .recipes-benefits .benefits-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .recipes-benefits .benefits-content .content {
   width: 25%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .recipes-benefits .benefits-content .content {
+    width: 80%;
+  }
 }
 header.about-home {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/about-header.jpg');
