@@ -942,3 +942,23 @@ header.about-home .inner h1 {
 .contact-header .inner {
   color: white;
 }
+.contact-cards {
+  margin: 5rem 0 10rem;
+}
+.contact-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-cards .card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  text-align: center;
+}
+.contact-cards .card .content img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
