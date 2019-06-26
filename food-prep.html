@@ -5,7 +5,8 @@
   <title>Macro Calculator | Food Prep</title>
   <link rel="stylesheet" type="text/css" href="./css/index.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <script src="./components/Carousel.js" async=""></script>
+  <script src="./components/food-prep.js" async=""></script>
+  <script src="https://kit.fontawesome.com/7f2b3715a0.js"></script>
 </head>
 
 <body>
@@ -38,78 +39,123 @@
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <!-- RECIPES CAROUSEL -->
-
-  <section class="section-recipes">
-    <div class="carousel">
-      <div class="left-arrow">&lt;</div>
-      <div class="content hide">
-          <div class="content-img">
-            <img src="./assets/food-prep/food-prep1.jpg" alt="bowl of chicken dish">  
-          </div>
-          <div class="content-text">
-            <h2>Chicken and Veggies</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, saepe! Lorem ipsum dolor sit amet.</p>
-            <span class="macros">
-              Calories: 434<br>
-              Protien: 54.5 g<br>
-              Carbs: 18.5 g<br>
-              Fat: 20 g<br>
-              Fiber: 8 g
-            </span>
-          </div>
-      </div>
-      <div class="content hide">
-          <div class="content-img">
-            <img src="./assets/food-prep/food-prep2.jpg" alt="light chicken salad">  
-          </div>
-          <div class="content-text">
-            <h2>Light Chicken Salad</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita saepe esse, reiciendis possimus eveniet dolorum!</p>
-            <span class="macros">
-              Calories: 191<br>
-              Protien: 18 g<br>
-              Carbs: 13 g<br>
-              Fat: 8 g<br>
-              Fiber: 2 g
-            </span>
-          </div>
-      </div>
-      <div class="content hide">
-          <div class="content-img">
-            <img src="./assets/food-prep/food-prep3.jpg" alt="bowl of chicken dish">  
-          </div>
-          <div class="content-text">
-            <h2>Baked Ranch Chicken</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nisi veritatis voluptatibus? Sapiente hic nam quia.</p>
-            <span class="macros">
-              Calorie: 276<br>
-              Protien: 30 g<br>
-              Carbs: 7 g<br>
-              Fat: 13 g<br>
-              Fiber: 0 g
-            </span>
-          </div>
-      </div>
-      <div class="content hide">
-          <div class="content-img">
-            <img src="./assets/food-prep/food-prep4.jpg" alt="bowl of chicken dish">  
-          </div>
-          <div class="content-text">
-            <h2>Homemade Oatmeal</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing. Natus ea dignissimos non!</p>
-            <span class="macros">
-              Protien: 54.5 g<br>
-              Carbs: 18.5 g<br>
-              Fat: 20 g<br>
-              Fiber: 8 g
-            </span>
-          </div>
-      </div>
-      <div class="right-arrow">&gt;</div>
+  <!-- RECIPES  -->
+  <section class="recipes-tabs">
+    <div class="headline">
+      <h2>Food Prep</h2>
+    </div>
+    <!-- TABS -->
+    <div class="tabs">
+      <span class="selected" data-tab="all">All</span>
+      <span data-tab="breakfast">Breakfast</span>
+      <span data-tab="lunch-dinner">Lunch/Dinner</span>
+      <span data-tab="snack">Snack</span>
     </div>
   </section>
+
+  <!-- CARDS CONTENT -->
+  <section class="cards">
+    <div class="content card" data-tab="lunch-dinner">
+        <img src="./assets/food-prep/food-prep1.jpg" alt="bowl of chicken dish">  
+        <div class="content-text">
+          <h2>Chicken and Veggies</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, saepe! Lorem ipsum dolor sit amet.</p>
+          <span class="macros">
+            Calories: 434<br>
+            Protein: 54.5 g<br>
+            Carbs: 18.5 g<br>
+            Fat: 20 g<br>
+            Fiber: 8 g
+          </span>
+        </div>
+    </div>
+    <div class="content card" data-tab="lunch-dinner">
+        <img src="./assets/food-prep/food-prep2.jpg" alt="light chicken salad">  
+        <div class="content-text">
+          <h2>Light Chicken Salad</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita saepe esse, reiciendis possimus eveniet dolorum!</p>
+          <span class="macros">
+            Calories: 191<br>
+            Protein: 18 g<br>
+            Carbs: 13 g<br>
+            Fat: 8 g<br>
+            Fiber: 2 g
+          </span>
+        </div>
+    </div>
+    <div class="content card" data-tab="lunch-dinner">
+        <img src="./assets/food-prep/food-prep3.jpg" alt="bowl of chicken dish">  
+        <div class="content-text">
+          <h2>Baked Ranch Chicken</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nisi veritatis voluptatibus? Sapiente hic nam quia.</p>
+          <span class="macros">
+            Calories: 276<br>
+            Protein: 30 g<br>
+            Carbs: 7 g<br>
+            Fat: 13 g<br>
+            Fiber: 0 g
+          </span>
+        </div>
+    </div>
+    <div class="content card" data-tab="breakfast">
+        <img src="./assets/food-prep/food-prep4.jpg" alt="bowl of chicken dish">  
+        <div class="content-text">
+          <h2>Homemade Oatmeal</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing. Natus ea dignissimos non!</p>
+          <span class="macros">
+            Calories: 229<br>
+            Protein: 6 g<br>
+            Carbs: 38 g<br>
+            Fat: 6 g<br>
+            Fiber: 5 g
+          </span>
+        </div>
+    </div>
+    <div class="content card" data-tab="snack">
+        <img src="./assets/food-prep/food-prep5.jpg" alt="granola bar">  
+        <div class="content-text">
+          <h2>Granola Bar</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nisi veritatis voluptatibus? Sapiente hic nam quia.</p>
+          <span class="macros">
+            Calories: 130<br>
+            Protein: 3 g<br>
+            Carbs: 27 g<br>
+            Fat: 2 g<br>
+            Fiber: 3 g
+          </span>
+        </div>
+    </div>
+  </section>
+
+  <!-- MEMBERSHIP BENEFITS -->
+
+  <section class="recipes-benefits">
+    <div class="headline">
+      <h2>Gain Access to 100+ Recipes</h2>
+    </div>
+    <div class="benefits-content">
+      <div class="content">
+        <i class="fas fa-blender fa-5x"></i>
+        <p>When you sign up for Macro Calculator you'll gain access over 100 food prep recipes</p>
+      </div>
+      <div class="content">
+        <i class="fab fa-leanpub fa-5x"></i>
+        <p>Add your own recipes and share them with our fast growing community! Find recipes others have shared!</p>
+      </div>
+      <div class="content">
+        <i class="fas fa-mobile fa-5x"></i>
+        <p>Access Macro Calculator on the go with our iOS or Android app!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGN UP -->
+  <section class="sign-up">
+      <div class="headline">
+        <h2>Sign Up For Free</h2>
+      </div>
+      <span class="cta-button">Become A Member</span>
+    </section>
 
   <!-- FOOTER -->
   <footer>

@@ -19,6 +19,10 @@
         text-align: center;
         text-shadow: 1px 1px 5px rgba(100, 100, 100, 1);
 
+        @media (max-width: 500px) {
+            max-width: 80%;
+        }
+
         h1 {
             border-bottom: 1px solid white;
             padding-bottom: 0.5rem;
@@ -36,19 +40,105 @@
 }
 
 /* =====================
-    FOOD-PREP CAROUSEL
+    FOOD-PREP CONTENT
 =======================*/
+.recipes-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.section-recipes .carousel {
-    .content-img {
-        position: relative;
-        width: 240px;
-        height: 240px;
-        overflow: hidden;
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
 
-        img {
+        @media (max-width: 500px) {
             width: 100%;
-            height: auto;
+            justify-content: space-around;
+        }
+    
+        span {
+            background: rgba(240, 240, 240, 1);
+            text-align: center;
+            padding: 0.5rem 1rem;
+            width: 10rem;
+            cursor: pointer;
+            margin: 1rem 0;
+
+            @media(max-width: 500px) {
+                width: 9rem;
+            }
+    
+            &:hover {
+                background: @arrow-color;
+                text-decoration: underline;
+            }
+    
+            &.selected {
+                background: @arrow-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 5rem;
+    flex-flow: row wrap;
+    width: 90%;
+
+    @media(max-width: 500px) {
+        width: 95%;
+    }
+
+    .content {
+        display: flex;
+        background: rgba(240, 240, 240, 1);
+        width: 45%;
+        padding: 2rem;
+        margin: 1rem;
+        align-items: center;
+
+        @media(max-width: 500px) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    img {
+        position: relative;
+        max-width: 25rem;
+        max-height: 25rem;
+        margin-right: 2rem;
+    }
+}
+
+.recipes-benefits {
+
+    .headline {
+        margin-bottom: 30px;
+    }
+
+    .benefits-content {
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin: 0 auto;
+
+        @media(max-width: 500px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .content {
+            width: 25%;
+            text-align: center;
+
+            @media(max-width: 500px) {
+                width: 80%;
+            }
         }
     }
 }
