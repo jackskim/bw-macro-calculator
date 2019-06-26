@@ -692,12 +692,17 @@ i.fab {
 /* =====================
     FOOD-PREP CONTENT
 =======================*/
-.tabs {
+.recipes-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes-tabs .tabs {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 60%;
 }
-.tabs span {
+.recipes-tabs .tabs span {
   background: #f0f0f0;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -705,11 +710,11 @@ i.fab {
   cursor: pointer;
   margin: 1rem 0;
 }
-.tabs span:hover {
+.recipes-tabs .tabs span:hover {
   background: #d3d3d3;
   text-decoration: underline;
 }
-.tabs span.selected {
+.recipes-tabs .tabs span.selected {
   background: #d3d3d3;
   text-decoration: underline;
 }
