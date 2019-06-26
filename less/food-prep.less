@@ -51,6 +51,11 @@
         display: flex;
         justify-content: space-between;
         width: 60%;
+
+        @media (max-width: 500px) {
+            width: 100%;
+            justify-content: space-around;
+        }
     
         span {
             background: rgba(240, 240, 240, 1);
@@ -59,6 +64,10 @@
             width: 10rem;
             cursor: pointer;
             margin: 1rem 0;
+
+            @media(max-width: 500px) {
+                width: 8rem;
+            }
     
             &:hover {
                 background: @arrow-color;

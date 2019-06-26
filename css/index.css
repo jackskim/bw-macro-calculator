@@ -702,6 +702,12 @@ i.fab {
   justify-content: space-between;
   width: 60%;
 }
+@media (max-width: 500px) {
+  .recipes-tabs .tabs {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
 .recipes-tabs .tabs span {
   background: #f0f0f0;
   text-align: center;
@@ -709,6 +715,11 @@ i.fab {
   width: 10rem;
   cursor: pointer;
   margin: 1rem 0;
+}
+@media (max-width: 500px) {
+  .recipes-tabs .tabs span {
+    width: 8rem;
+  }
 }
 .recipes-tabs .tabs span:hover {
   background: #d3d3d3;
