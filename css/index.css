@@ -467,7 +467,7 @@ header.home .inner .cta-button:hover {
 }
 @media (max-width: 500px) {
   .carousel {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 }
 .carousel .content {
@@ -697,16 +697,6 @@ i.fab {
   color: #E01A1A;
 }
 /* =====================
-     TESTIMONIALS
- ======================= */
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-}
-.carousel .testimonial {
-}
         SIGN UP
  ======================= */
 .sign-up {
@@ -727,71 +717,6 @@ i.fab {
   .sign-up .headline {
     margin-bottom: 20px;
   }
-}
-/* =====================
-     FOOD-PREP HEADER
-=======================*/
-.food-prep-header {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(../assets/food-prep-header.jpg);
-  background-size: auto, cover;
-  background-position: center;
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 55%;
-  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
-  padding: 30px;
-}
-.carousel .testimonial .testimonial-img {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-.carousel .testimonial .testimonial-img img {
-  width: 100%;
-  height: auto;
-}
-.carousel .testimonial .testimonial-text {
-  margin: 0 50px;
-  max-width: 50%;
-  height: 45vh;
-  position: relative;
-}
-.carousel .testimonial .testimonial-text h2 {
-  font-size: 3.2rem;
-}
-.carousel .testimonial .testimonial-text p {
-  font-size: 2rem;
-  line-height: 1.4;
-}
-.carousel .testimonial .testimonial-text span {
-  display: block;
-  font-size: 2.4rem;
-  text-align: right;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-.carousel .left-arrow,
-.carousel .right-arrow {
-  font-size: 7.2rem;
-  color: #d3d3d3;
-  margin: 0 20px;
-  cursor: pointer;
-}
-.carousel .hide {
-  display: none;
-}
-/* =====================
-        SIGN UP
- ======================= */
-.sign-up {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5%;
-}
-.sign-up .headline {
-  margin-bottom: 30px;
 }
 /* =====================
      FOOD-PREP HEADER
@@ -851,7 +776,6 @@ i.fab {
   justify-content: space-between;
   width: 60%;
 }
-
 @media (max-width: 500px) {
   .recipes-tabs .tabs {
     width: 100%;
@@ -935,7 +859,6 @@ i.fab {
     width: 80%;
   }
 }
-
 header.about-home {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/about-header.jpg');
   background-position: center, center;
@@ -988,7 +911,6 @@ header.about-home .inner h1 {
   width: 45%;
   padding: 2%;
 }
-
 @media (max-width: 500px) {
   .column {
     width: 100%;
@@ -1005,7 +927,6 @@ header.about-home .inner h1 {
     margin-top: 10px;
   }
 }
-
 .column p {
   text-align: center;
 }
