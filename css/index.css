@@ -532,7 +532,8 @@ footer .footer-top ul a:hover {
   background-color: #E7B216;
 }
 i.fas,
-i.far {
+i.far,
+i.fab {
   color: #ffdf80;
   margin-bottom: 20px;
 }
