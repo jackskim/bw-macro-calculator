@@ -727,13 +727,16 @@ i.fab {
   max-width: 25rem;
   margin-right: 5rem;
 }
-.benefits-content {
+.recipes-benefits .headline {
+  margin-bottom: 30px;
+}
+.recipes-benefits .benefits-content {
   display: flex;
   width: 80%;
   justify-content: space-around;
   margin: 0 auto;
 }
-.benefits-content .content {
+.recipes-benefits .benefits-content .content {
   width: 25%;
   text-align: center;
 }
