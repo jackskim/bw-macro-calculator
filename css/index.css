@@ -531,6 +531,11 @@ footer .footer-top ul a:hover {
 .cta-button:hover {
   background-color: #E7B216;
 }
+i.fas,
+i.far {
+  color: #ffdf80;
+  margin-bottom: 20px;
+}
 /* =====================
         FEATURES
  ======================= */
@@ -771,11 +776,6 @@ header.about-home .inner h1 {
   align-items: center;
   width: 45%;
   padding: 2%;
-}
-.column i.fas,
-.column i.far {
-  color: #ffdf80;
-  margin-bottom: 20px;
 }
 .column p {
   text-align: center;
