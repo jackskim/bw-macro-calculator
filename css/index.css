@@ -467,7 +467,7 @@ header.home .inner .cta-button:hover {
 }
 @media (max-width: 500px) {
   .carousel {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 }
 .carousel .content {
@@ -481,6 +481,7 @@ header.home .inner .cta-button:hover {
   .carousel .content {
     flex-direction: column;
     max-width: 100%;
+    padding: 30px 55px 30px;
   }
 }
 .carousel .content .content-img {
@@ -546,14 +547,14 @@ header.home .inner .cta-button:hover {
   .carousel .left-arrow {
     position: absolute;
     left: 10px;
-    bottom: -80px;
+    top: 65%;
   }
 }
 @media (max-width: 500px) {
   .carousel .right-arrow {
     position: absolute;
     right: 10px;
-    bottom: -80px;
+    top: 65%;
   }
 }
 .carousel .hide {
