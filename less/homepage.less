@@ -9,6 +9,10 @@
   text-align: center;
   margin: 0 auto;
 
+  @media(max-width: @mobile) {
+    width: 100%;
+  }
+
   h2 {
     border-bottom: 2px solid @accent-color;
     padding-bottom: 10px;
@@ -27,12 +31,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10rem;
+    padding: 5rem;
+
+    @media(max-width: @mobile) {
+      padding: 5rem;
+    }
     
     .keypoints {
         display: flex;
         justify-content: space-around;
         width: 80%;
+
+        @media(max-width: @mobile) {
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+        }
 
         .card {
             padding: 20px;
@@ -42,6 +56,10 @@
             margin-bottom: 20px;
             position: relative;
             transition: 0.5s; 
+
+            @media(max-width: @mobile) {
+              width: 100%;
+            }
 
             &:hover {
                 transform: scale(1.05);
@@ -65,71 +83,6 @@
     }
 }
 
-/* =====================
-     TESTIMONIALS
- ======================= */
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-
-  .testimonial {
-    display: flex;
-    justify-content: space-evenly;
-    max-width: 55%;
-    box-shadow: 0 0 14px 2px rgba(0,0,0,.31);
-    padding: 30px;
-  
-    .testimonial-img {
-      display: flex;
-      align-items: center;
-      margin: 0;
-    
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    .testimonial-text {
-      margin: 0 50px;
-      max-width: 50%;
-      height: 45vh;
-      position: relative;
-
-      h2 {
-        font-size: 3.2rem;
-      }
-
-      p {
-        font-size: 2.0rem;
-        line-height: 1.4;
-      }
-
-      span {
-        display: block;
-        font-size: 2.4rem;
-        text-align: right;
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
-      }
-    }
-  }
-
-  .left-arrow,
-  .right-arrow {
-    font-size: 7.2rem;
-    color: @arrow-color;
-    margin: 0 20px;
-    cursor: pointer;
-  }
-}
-
-.carousel .hide {
-  display: none;
-}
 
 /* =====================
         SIGN UP
@@ -141,7 +94,14 @@
   align-items: center;
   margin-bottom: 5%;
 
+  @media(max-width: @mobile) {
+    margin-bottom: 15%;
+  }
+
   .headline {
     margin-bottom: 30px;
+    @media(max-width: @mobile) {
+      margin-bottom: 20px;
+    }
   }
 }

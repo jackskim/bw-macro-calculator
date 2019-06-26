@@ -11,6 +11,11 @@ footer {
         align-items: center;
         width: 80%;
         padding-top: 10px;
+
+        @media (max-width: @mobile) {
+          justify-content: center;
+          flex-direction: column;
+        }
         
         h4{
             font-weight: 300;
@@ -22,6 +27,9 @@ footer {
             display: flex;
             justify-content: space-around;
             width: 40%;
+            @media (max-width: @mobile) {
+              width: 100%;
+            }
 
             a {
                 color: white;
