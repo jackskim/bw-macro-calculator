@@ -364,14 +364,14 @@ h3 {
 .nav .nav-top .nav-login-signup span {
   color: #A0A0A0;
 }
-@media (max-width: 500px) {
-  .nav .nav-top {
-    margin: 0 20px;
-  }
-}
 @media (max-width: 800px) {
   .nav .nav-top {
     margin: 0 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .nav .nav-top {
+    margin: 0 20px;
   }
 }
 .nav .nav-bottom {
@@ -399,15 +399,15 @@ h3 {
   display: flex;
   margin: 0 50px;
 }
-@media (max-width: 500px) {
-  .nav .nav-bottom ul {
-    margin: 0 1%;
-  }
-}
 @media (max-width: 800px) {
   .nav .nav-bottom ul {
     margin: 0 3rem;
     padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  .nav .nav-bottom ul {
+    margin: 0 1%;
   }
 }
 .nav .nav-bottom ul a {
@@ -446,15 +446,15 @@ header.home .inner {
   padding-right: 45%;
   color: white;
 }
-@media (max-width: 500px) {
-  header.home .inner {
-    max-width: 45%;
-    padding-right: 30%;
-  }
-}
 @media (max-width: 800px) {
   header.home .inner {
     max-width: 50%;
+    padding-right: 30%;
+  }
+}
+@media (max-width: 500px) {
+  header.home .inner {
+    max-width: 45%;
     padding-right: 30%;
   }
 }
@@ -511,17 +511,17 @@ header.home .inner .cta-button:hover {
   box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
   padding: 30px;
 }
-@media (max-width: 500px) {
-  .carousel .content {
-    max-width: 100%;
-    padding: 50px 30px 100px;
-  }
-}
 @media (max-width: 800px) {
   .carousel .content {
     flex-direction: column;
     align-items: center;
     max-width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .content {
+    max-width: 100%;
+    padding: 50px 30px 100px;
   }
 }
 .carousel .content .content-img {
@@ -544,18 +544,18 @@ header.home .inner .cta-button:hover {
   height: 45vh;
   position: relative;
 }
-@media (max-width: 500px) {
-  .carousel .content .content-text {
-    height: 35vh;
-    max-width: 100%;
-    margin: 0 10px;
-  }
-}
 @media (max-width: 800px) {
   .carousel .content .content-text {
     height: initial;
     max-width: 90%;
     margin: initial;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .content .content-text {
+    height: 35vh;
+    max-width: 100%;
+    margin: 0 10px;
   }
 }
 .carousel .content .content-text h2 {
@@ -583,14 +583,14 @@ header.home .inner .cta-button:hover {
   right: 0px;
   bottom: 0px;
 }
-@media (max-width: 500px) {
-  .carousel .content .content-text span {
-    font-size: 1.8rem;
-  }
-}
 @media (max-width: 800px) {
   .carousel .content .content-text span {
     bottom: -1rem;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .content .content-text span {
+    font-size: 1.8rem;
   }
 }
 .carousel .left-arrow,
@@ -733,11 +733,6 @@ i.fab {
   align-items: center;
   padding: 5rem;
 }
-@media (max-width: 500px) {
-  .features {
-    padding: 5rem;
-  }
-}
 @media (max-width: 800px) {
   .features {
     padding: 2rem;
@@ -746,21 +741,26 @@ i.fab {
     width: 50%;
   }
 }
+@media (max-width: 500px) {
+  .features {
+    padding: 5rem;
+  }
+}
 .features .keypoints {
   display: flex;
   justify-content: space-around;
   width: 80%;
+}
+@media (max-width: 800px) {
+  .features .keypoints {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .features .keypoints {
     flex-direction: column;
     width: 100%;
     align-items: center;
-  }
-}
-@media (max-width: 800px) {
-  .features .keypoints {
-    width: 100%;
   }
 }
 .features .keypoints .card {
@@ -873,15 +873,15 @@ i.fab {
   justify-content: space-between;
   width: 60%;
 }
+@media (max-width: 800px) {
+  .recipes-tabs .tabs {
+    width: 85%;
+  }
+}
 @media (max-width: 500px) {
   .recipes-tabs .tabs {
     width: 100%;
     justify-content: space-around;
-  }
-}
-@media (max-width: 800px) {
-  .recipes-tabs .tabs {
-    width: 85%;
   }
 }
 .recipes-tabs .tabs span {
@@ -925,15 +925,15 @@ i.fab {
   margin: 1rem;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .cards .content {
+    width: 95%;
+  }
+}
 @media (max-width: 500px) {
   .cards .content {
     flex-direction: column;
     width: 100%;
-  }
-}
-@media (max-width: 800px) {
-  .cards .content {
-    width: 95%;
   }
 }
 .cards img {
@@ -1072,14 +1072,14 @@ header.about-home .inner h1 {
   width: 30%;
   margin-bottom: 50px;
 }
-@media (max-width: 500px) {
-  .contact-form-container .contact-form {
-    width: 80%;
-  }
-}
 @media (max-width: 800px) {
   .contact-form-container .contact-form {
     width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .contact-form-container .contact-form {
+    width: 80%;
   }
 }
 .contact-form-container .contact-form input,

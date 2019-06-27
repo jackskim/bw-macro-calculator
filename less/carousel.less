@@ -19,18 +19,18 @@
     max-width: 55%;
     box-shadow: 0 0 14px 2px rgba(0,0,0,.31);
     padding: 30px;
-
-    @media(max-width: @mobile) {
-      max-width: 100%;
-      padding: 50px 30px 100px;
-    }
-
+    
     @media(max-width: @tablet) {
       flex-direction: column;
       align-items: center;
       max-width: 95%;
     }
-  
+
+    @media(max-width: @mobile) {
+      max-width: 100%;
+      padding: 50px 30px 100px;
+    }
+    
     .content-img {
       display: flex;
       align-items: center;
@@ -52,16 +52,16 @@
       height: 45vh;
       position: relative;
 
-      @media( max-width: @mobile) {
-        height: 35vh;
-        max-width: 100%;
-        margin: 0 10px;
-      }
-
       @media(max-width: @tablet) {
         height: initial;
         max-width: 90%;
         margin: initial;
+      }
+
+      @media( max-width: @mobile) {
+        height: 35vh;
+        max-width: 100%;
+        margin: 0 10px;
       }
 
       h2 {
@@ -87,12 +87,12 @@
         right: 0px;
         bottom: 0px;
 
-        @media(max-width: @mobile) {
-          font-size: 1.8rem;
-        }
-
         @media(max-width: @tablet) {
           bottom: -1rem;
+        }
+
+        @media(max-width: @mobile) {
+          font-size: 1.8rem;
         }
       }
     }

@@ -48,10 +48,6 @@ i.far, i.fab {
     align-items: center;
     padding: 5rem;
 
-    @media(max-width: @mobile) {
-      padding: 5rem;
-    }
-
     @media(max-width: @tablet) {
       padding: 2rem;
 
@@ -59,20 +55,24 @@ i.far, i.fab {
         width: 50%;
       }
     }
+
+    @media(max-width: @mobile) {
+      padding: 5rem;
+    }
     
     .keypoints {
         display: flex;
         justify-content: space-around;
         width: 80%;
 
+        @media(max-width: @tablet) {
+          width: 100%;
+        }
+
         @media(max-width: @mobile) {
           flex-direction: column;
           width: 100%;
           align-items: center;
-        }
-
-        @media(max-width: @tablet) {
-          width: 100%;
         }
 
         .card {
@@ -127,6 +127,7 @@ i.far, i.fab {
 
   .headline {
     margin-bottom: 30px;
+    
     @media(max-width: @mobile) {
       margin-bottom: 20px;
     }
