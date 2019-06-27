@@ -1,15 +1,18 @@
 class NavMenu {
-    constructor(navList) {
-        this.menuButton = navList.querySelector('.menu-button');
-        this.links = navList.querySelectorAll('li');
+    constructor(navigation) {
+        this.navigation = navigation;
+        this.menuButton = navigation.querySelector('.menu-button');
+        this.links = navigation.querySelector('ul');
 
         this.menuButton.addEventListener('click', this.toggleMenu);
     }
 
     toggleMenu = () => {
-        this.links.forEach(link => link.classList.toggle('open'));
+        event.stopPropagation;
+        this.links.classList.toggle('open');
+        this.navigation.classList.toggle('open');
     }
 }
 
-const navMenu = document.querySelector('.nav-bottom ul');
+const navMenu = document.querySelector('.nav-bottom');
 new NavMenu(navMenu);
