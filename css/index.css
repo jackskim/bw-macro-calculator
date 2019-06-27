@@ -380,18 +380,7 @@ h3 {
 @media (max-width: 500px) {
   .nav .nav-bottom {
     display: flex;
-    align-items: center;
-  }
-}
-.nav .nav-bottom .fa-bars {
-  display: none;
-  color: white;
-}
-@media (max-width: 500px) {
-  .nav .nav-bottom .fa-bars {
-    display: flex;
-    position: relative;
-    left: 3rem;
+    min-height: 4.2rem;
   }
 }
 .nav .nav-bottom ul {
@@ -399,15 +388,21 @@ h3 {
   display: flex;
   margin: 0 50px;
 }
+.nav .nav-bottom ul .fa-bars {
+  display: none;
+  color: white;
+}
+@media (max-width: 500px) {
+  .nav .nav-bottom ul .fa-bars {
+    display: flex;
+    position: absolute;
+    left: 3rem;
+  }
+}
 @media (max-width: 800px) {
   .nav .nav-bottom ul {
     margin: 0 3rem;
     padding: 0;
-  }
-}
-@media (max-width: 500px) {
-  .nav .nav-bottom ul {
-    margin: 0 1%;
   }
 }
 .nav .nav-bottom ul a {
@@ -422,6 +417,14 @@ h3 {
     font-size: 1.4rem;
   }
 }
+@media (max-width: 500px) {
+  .nav .nav-bottom ul li {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
 .nav .nav-bottom ul li:hover {
   background-color: #b21515;
 }
@@ -434,8 +437,7 @@ header.home {
 }
 @media (max-width: 500px) {
   header.home {
-    padding: 10rem 0 20rem;
-    height: 60vh;
+    padding: 10rem 0;
   }
 }
 header.home .inner {

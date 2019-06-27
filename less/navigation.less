@@ -31,45 +31,50 @@
 
     @media(max-width: @mobile) {
       display: flex;
-      align-items: center;
+      min-height: 4.2rem;
     }
 
-    .fa-bars {
-      display: none;
-      color: white;
-
-      @media (max-width: @mobile) {
-        display: flex;
-        position: relative;
-        left: 3rem;
-      }
-    }
-
+    
     
     ul {
       list-style: none;
       display: flex;
       margin: 0 50px;
       
+      .fa-bars {
+        display: none;
+        color: white;
+  
+        @media (max-width: @mobile) {
+          display: flex;
+          position: absolute;
+          left: 3rem;
+        }
+      }
+
       @media (max-width: @tablet) {
         margin: 0 3rem;
         padding: 0;
       }
       
-      @media (max-width: @mobile) {
-        margin: 0 1%;
-      }
-
+      
       a {
         color: white;
         text-transform: uppercase;
       }
-
+      
       li {
         padding: 12px;
-
+        
         @media(max-width: @mobile) {
           font-size: 1.4rem;
+        }
+        
+        @media (max-width: @mobile) {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 auto;
         }
       }
 
