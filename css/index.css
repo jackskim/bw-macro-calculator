@@ -779,7 +779,7 @@ i.fab {
   background-size: auto, cover;
   background-position: center;
   display: flex;
-  padding: 15rem 0 15rem;
+  padding: 15rem 0;
 }
 .food-prep-header .inner {
   display: flex;
@@ -791,7 +791,7 @@ i.fab {
   text-align: center;
   text-shadow: 1px 1px 5px #646464;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .food-prep-header .inner {
     max-width: 80%;
   }
