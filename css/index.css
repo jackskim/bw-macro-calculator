@@ -369,6 +369,11 @@ h3 {
     margin: 0 20px;
   }
 }
+@media (max-width: 800px) {
+  .nav .nav-top {
+    margin: 0 3rem;
+  }
+}
 .nav .nav-bottom {
   background-color: #E01A1A;
 }
@@ -380,6 +385,12 @@ h3 {
 @media (max-width: 500px) {
   .nav .nav-bottom ul {
     margin: 0 1%;
+  }
+}
+@media (max-width: 800px) {
+  .nav .nav-bottom ul {
+    margin: 0 3rem;
+    padding: 0;
   }
 }
 .nav .nav-bottom ul a {
@@ -421,6 +432,12 @@ header.home .inner {
 @media (max-width: 500px) {
   header.home .inner {
     max-width: 45%;
+    padding-right: 30%;
+  }
+}
+@media (max-width: 800px) {
+  header.home .inner {
+    max-width: 50%;
     padding-right: 30%;
   }
 }
@@ -479,9 +496,15 @@ header.home .inner .cta-button:hover {
 }
 @media (max-width: 500px) {
   .carousel .content {
-    flex-direction: column;
     max-width: 100%;
     padding: 50px 30px 100px;
+  }
+}
+@media (max-width: 800px) {
+  .carousel .content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
   }
 }
 .carousel .content .content-img {
@@ -493,9 +516,14 @@ header.home .inner .cta-button:hover {
   width: 100%;
   height: auto;
 }
+@media (max-width: 800px) {
+  .carousel .content .content-img {
+    width: 50%;
+  }
+}
 .carousel .content .content-text {
   margin: 0 50px;
-  max-width: 50%;
+  max-width: 65%;
   height: 45vh;
   position: relative;
 }
@@ -504,6 +532,13 @@ header.home .inner .cta-button:hover {
     height: 35vh;
     max-width: 100%;
     margin: 0 10px;
+  }
+}
+@media (max-width: 800px) {
+  .carousel .content .content-text {
+    height: initial;
+    max-width: 90%;
+    margin: initial;
   }
 }
 .carousel .content .content-text h2 {
@@ -534,6 +569,11 @@ header.home .inner .cta-button:hover {
 @media (max-width: 500px) {
   .carousel .content .content-text span {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .carousel .content .content-text span {
+    bottom: -1rem;
   }
 }
 .carousel .left-arrow,
@@ -681,6 +721,14 @@ i.fab {
     padding: 5rem;
   }
 }
+@media (max-width: 800px) {
+  .features {
+    padding: 2rem;
+  }
+  .features .headline {
+    width: 50%;
+  }
+}
 .features .keypoints {
   display: flex;
   justify-content: space-around;
@@ -691,6 +739,11 @@ i.fab {
     flex-direction: column;
     width: 100%;
     align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .features .keypoints {
+    width: 100%;
   }
 }
 .features .keypoints .card {
@@ -753,7 +806,7 @@ i.fab {
   background-size: auto, cover;
   background-position: center;
   display: flex;
-  padding: 15rem 0 15rem;
+  padding: 15rem 0;
 }
 .food-prep-header .inner {
   display: flex;
@@ -765,7 +818,7 @@ i.fab {
   text-align: center;
   text-shadow: 1px 1px 5px #646464;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .food-prep-header .inner {
     max-width: 80%;
   }
@@ -807,6 +860,11 @@ i.fab {
   .recipes-tabs .tabs {
     width: 100%;
     justify-content: space-around;
+  }
+}
+@media (max-width: 800px) {
+  .recipes-tabs .tabs {
+    width: 85%;
   }
 }
 .recipes-tabs .tabs span {
@@ -854,6 +912,11 @@ i.fab {
   .cards .content {
     flex-direction: column;
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .cards .content {
+    width: 95%;
   }
 }
 .cards img {
@@ -911,7 +974,7 @@ header.about-home .inner h1 {
 .how-it-works {
   width: 40%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .how-it-works {
     width: 70%;
   }
@@ -995,6 +1058,11 @@ header.about-home .inner h1 {
 @media (max-width: 500px) {
   .contact-form-container .contact-form {
     width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .contact-form-container .contact-form {
+    width: 60%;
   }
 }
 .contact-form-container .contact-form input,

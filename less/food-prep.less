@@ -7,7 +7,7 @@
     background-size: auto, cover;
     background-position: center;
     display: flex;
-    padding: 15rem 0 15rem;
+    padding: 15rem 0;
 
     .inner {
         display: flex;
@@ -19,7 +19,7 @@
         text-align: center;
         text-shadow: 1px 1px 5px rgba(100, 100, 100, 1);
 
-        @media (max-width: 500px) {
+        @media (max-width: @tablet) {
             max-width: 80%;
         }
 
@@ -52,9 +52,13 @@
         justify-content: space-between;
         width: 60%;
 
-        @media (max-width: 500px) {
+        @media (max-width: @mobile) {
             width: 100%;
             justify-content: space-around;
+        }
+
+        @media (max-width: @tablet) {
+            width: 85%;
         }
     
         span {
@@ -65,7 +69,7 @@
             cursor: pointer;
             margin: 1rem 0;
 
-            @media(max-width: 500px) {
+            @media(max-width: @mobile) {
                 width: 9rem;
             }
     
@@ -89,10 +93,11 @@
     flex-flow: row wrap;
     width: 90%;
 
-    @media(max-width: 500px) {
+    @media(max-width: @mobile) {
         width: 95%;
     }
 
+    
     .content {
         display: flex;
         background: rgba(240, 240, 240, 1);
@@ -100,10 +105,14 @@
         padding: 2rem;
         margin: 1rem;
         align-items: center;
-
-        @media(max-width: 500px) {
+        
+        @media(max-width: @mobile) {
             flex-direction: column;
             width: 100%;
+        }
+
+        @media (max-width: @tablet) {
+            width: 95%;
         }
     }
 
