@@ -424,6 +424,12 @@ header.home .inner {
     padding-right: 30%;
   }
 }
+@media (max-width: 800px) {
+  header.home .inner {
+    max-width: 50%;
+    padding-right: 30%;
+  }
+}
 header.home .inner h1 {
   border-bottom: 1px solid white;
   padding-bottom: 0.5rem;
