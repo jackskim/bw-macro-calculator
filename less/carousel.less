@@ -23,7 +23,7 @@
     @media(max-width: @mobile) {
       flex-direction: column;
       max-width: 100%;
-      padding: 30px 55px 30px;
+      padding: 50px 30px 100px;
     }
   
     .content-img {
@@ -79,27 +79,33 @@
     }
   }
 
-  .left-arrow,
-  .right-arrow {
-    font-size: 7.2rem;
-    color: @arrow-color;
-    margin: 0 20px;
+ .left-arrow,
+ .right-arrow {
+    margin: 0 30px;
     cursor: pointer;
+
+    i.fas {
+      color: @arrow-color;
+    }
+  }
+
+  @media (max-width: @mobile) {
+    margin: 0;
   }
 
   .left-arrow {
     @media(max-width: @mobile) {
       position: absolute;
-      left: 10px;
-      top: 65%;
+      left: 0;
+      bottom: 15px;
     }
   }
 
   .right-arrow {
     @media(max-width: @mobile) {
       position: absolute;
-      right: 10px;
-      top: 65%;
+      right: 0;
+      bottom: 15px;
     }
   }
 

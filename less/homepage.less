@@ -23,10 +23,19 @@
   .button-mix(25rem);
 }
 
+.cta-button-header {
+  .button-mix(25rem, @nav-bg-color, darken(@nav-bg-color, 10%));
+  margin-top: 15px;
+}
+
 i.fas,
 i.far, i.fab {
   color: @icon-color;
   margin-bottom: 20px;
+
+  @media (max-width: @mobile) {
+    margin-top: 10px;
+  }
 }
 
 /* =====================

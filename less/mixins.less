@@ -1,4 +1,4 @@
-.button-mix(@button-width: 15rem; @button-color: @accent-color) {
+.button-mix(@button-width: 15rem; @button-color: @accent-color; @button-hover: @accent-hover) {
     background-color: @button-color;
     text-align: center;
     text-shadow: 0 0 0.2rem #A0A0A0;
@@ -8,6 +8,6 @@
     cursor: pointer;
 
     &:hover {
-        background-color: @accent-hover;
+        background-color: @button-hover;
     }
 }
