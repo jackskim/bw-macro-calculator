@@ -42,6 +42,14 @@ i.far, i.fab {
     @media(max-width: @mobile) {
       padding: 5rem;
     }
+
+    @media(max-width: @tablet) {
+      padding: 2rem;
+
+      .headline {
+        width: 50%;
+      }
+    }
     
     .keypoints {
         display: flex;
@@ -52,6 +60,10 @@ i.far, i.fab {
           flex-direction: column;
           width: 100%;
           align-items: center;
+        }
+
+        @media(max-width: @tablet) {
+          width: 100%;
         }
 
         .card {

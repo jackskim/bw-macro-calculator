@@ -660,6 +660,14 @@ i.fab {
     padding: 5rem;
   }
 }
+@media (max-width: 800px) {
+  .features {
+    padding: 2rem;
+  }
+  .features .headline {
+    width: 50%;
+  }
+}
 .features .keypoints {
   display: flex;
   justify-content: space-around;
@@ -670,6 +678,11 @@ i.fab {
     flex-direction: column;
     width: 100%;
     align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .features .keypoints {
+    width: 100%;
   }
 }
 .features .keypoints .card {
