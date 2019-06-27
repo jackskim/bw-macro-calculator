@@ -937,7 +937,7 @@ header.about-home .inner h1 {
 .how-it-works {
   width: 40%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .how-it-works {
     width: 70%;
   }
