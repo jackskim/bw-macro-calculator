@@ -1044,6 +1044,11 @@ header.about-home .inner h1 {
     width: 80%;
   }
 }
+@media (max-width: 800px) {
+  .contact-form-container .contact-form {
+    width: 60%;
+  }
+}
 .contact-form-container .contact-form input,
 .contact-form-container .contact-form textarea {
   color: #aaa;
