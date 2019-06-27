@@ -411,7 +411,7 @@ h3 {
 @media (max-width: 800px) {
   .nav .nav-bottom ul {
     margin: 0;
-    padding: 0;
+    padding: 0 3rem;
   }
 }
 @media (max-width: 500px) {
@@ -421,6 +421,7 @@ h3 {
     top: -390%;
     transition: top 0.3s;
     width: 100%;
+    padding: 0;
   }
   .nav .nav-bottom ul.open {
     top: 2rem;
