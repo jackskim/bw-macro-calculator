@@ -35,3 +35,42 @@
         }
     }
 }
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-bottom: 50px;
+
+    @media (max-width: @mobile) {
+      width: 80%;
+    }
+
+    input,
+    textarea {
+      color: #aaa;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid @arrow-color;
+      width: 100%;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input.cta-button {
+      color: white;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+}

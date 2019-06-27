@@ -962,3 +962,38 @@ header.about-home .inner h1 {
   height: auto;
   border-radius: 50%;
 }
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form-container .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .contact-form-container .contact-form {
+    width: 80%;
+  }
+}
+.contact-form-container .contact-form input,
+.contact-form-container .contact-form textarea {
+  color: #aaa;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  width: 100%;
+}
+.contact-form-container .contact-form textarea {
+  height: 100px;
+}
+.contact-form-container .contact-form input.cta-button {
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+}
