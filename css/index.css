@@ -943,7 +943,7 @@ header.about-home .inner h1 {
   color: white;
 }
 .contact-cards {
-  margin: 5rem 0 10rem;
+  margin: 5rem 0 5rem;
 }
 .contact-cards .card {
   display: flex;
