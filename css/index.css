@@ -481,7 +481,7 @@ header.home .inner .cta-button:hover {
   .carousel .content {
     flex-direction: column;
     max-width: 100%;
-    padding: 30px 55px 30px;
+    padding: 60px;
   }
 }
 .carousel .content .content-img {
@@ -504,6 +504,7 @@ header.home .inner .cta-button:hover {
     height: 35vh;
     max-width: 100%;
     margin: 0 10px;
+    padding-bottom: 30px;
   }
 }
 .carousel .content .content-text h2 {
@@ -538,23 +539,30 @@ header.home .inner .cta-button:hover {
 }
 .carousel .left-arrow,
 .carousel .right-arrow {
-  font-size: 7.2rem;
-  color: #d3d3d3;
-  margin: 0 20px;
+  margin: 0 30px;
   cursor: pointer;
+}
+.carousel .left-arrow i.fas,
+.carousel .right-arrow i.fas {
+  color: #d3d3d3;
+}
+@media (max-width: 500px) {
+  .carousel {
+    margin: 0;
+  }
 }
 @media (max-width: 500px) {
   .carousel .left-arrow {
     position: absolute;
-    left: 10px;
-    top: 65%;
+    left: 0;
+    top: 60%;
   }
 }
 @media (max-width: 500px) {
   .carousel .right-arrow {
     position: absolute;
-    right: 10px;
-    top: 65%;
+    right: 0;
+    top: 60%;
   }
 }
 .carousel .hide {

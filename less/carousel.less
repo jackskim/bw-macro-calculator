@@ -23,7 +23,7 @@
     @media(max-width: @mobile) {
       flex-direction: column;
       max-width: 100%;
-      padding: 30px 55px 30px;
+      padding: 60px;
     }
   
     .content-img {
@@ -47,6 +47,7 @@
         height: 35vh;
         max-width: 100%;
         margin: 0 10px;
+        padding-bottom: 30px;
       }
 
       h2 {
@@ -79,27 +80,33 @@
     }
   }
 
-  .left-arrow,
-  .right-arrow {
-    font-size: 7.2rem;
-    color: @arrow-color;
-    margin: 0 20px;
+ .left-arrow,
+ .right-arrow {
+    margin: 0 30px;
     cursor: pointer;
+
+    i.fas {
+      color: @arrow-color;
+    }
+  }
+
+  @media (max-width: @mobile) {
+    margin: 0;
   }
 
   .left-arrow {
     @media(max-width: @mobile) {
       position: absolute;
-      left: 10px;
-      top: 65%;
+      left: 0;
+      top: 60%;
     }
   }
 
   .right-arrow {
     @media(max-width: @mobile) {
       position: absolute;
-      right: 10px;
-      top: 65%;
+      right: 0;
+      top: 60%;
     }
   }
 
