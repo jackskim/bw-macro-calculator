@@ -369,6 +369,11 @@ h3 {
     margin: 0 20px;
   }
 }
+@media (max-width: 800px) {
+  .nav .nav-top {
+    margin: 0 3rem;
+  }
+}
 .nav .nav-bottom {
   background-color: #E01A1A;
 }
@@ -380,6 +385,12 @@ h3 {
 @media (max-width: 500px) {
   .nav .nav-bottom ul {
     margin: 0 1%;
+  }
+}
+@media (max-width: 800px) {
+  .nav .nav-bottom ul {
+    margin: 0 3rem;
+    padding: 0;
   }
 }
 .nav .nav-bottom ul a {
