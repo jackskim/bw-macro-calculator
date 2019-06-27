@@ -70,6 +70,5 @@ class Carousel {
 }
 
 let testimonialCarousel = new Carousel(document.querySelector('.section-testimonials .carousel'));
-let recipeCarousel = new Carousel(document.querySelector('.section-recipes .carousel'))
 
 
