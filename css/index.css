@@ -634,6 +634,19 @@ footer .footer-top ul a:hover {
 .cta-button:hover {
   background-color: #E7B216;
 }
+.cta-button-header {
+  background-color: #E01A1A;
+  text-align: center;
+  text-shadow: 0 0 0.2rem #A0A0A0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 25rem;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.cta-button-header:hover {
+  background-color: #b21515;
+}
 i.fas,
 i.far,
 i.fab {
