@@ -29,6 +29,23 @@
   .nav-bottom {
     background-color: @nav-bg-color;
 
+    @media(max-width: @mobile) {
+      display: flex;
+      align-items: center;
+    }
+
+    .fa-bars {
+      display: none;
+      color: white;
+
+      @media (max-width: @mobile) {
+        display: flex;
+        position: relative;
+        left: 3rem;
+      }
+    }
+
+    
     ul {
       list-style: none;
       display: flex;

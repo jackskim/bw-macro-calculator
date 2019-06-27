@@ -377,6 +377,23 @@ h3 {
 .nav .nav-bottom {
   background-color: #E01A1A;
 }
+@media (max-width: 500px) {
+  .nav .nav-bottom {
+    display: flex;
+    align-items: center;
+  }
+}
+.nav .nav-bottom .fa-bars {
+  display: none;
+  color: white;
+}
+@media (max-width: 500px) {
+  .nav .nav-bottom .fa-bars {
+    display: flex;
+    position: relative;
+    left: 3rem;
+  }
+}
 .nav .nav-bottom ul {
   list-style: none;
   display: flex;
