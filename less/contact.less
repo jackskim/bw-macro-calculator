@@ -1,0 +1,76 @@
+.contact-header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../assets/contact-header.jpg);
+    background-size: cover;
+    padding: 15rem;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .inner {
+        color: white;
+    }
+}
+
+.contact-cards {
+    margin: 5rem 0 5rem;
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            text-align: center;
+
+            img {
+                width: 150px;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 50px;
+
+    @media (max-width: @mobile) {
+      width: 80%;
+    }
+
+    input,
+    textarea {
+      color: #aaa;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid @arrow-color;
+      width: 100%;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input.cta-button {
+      color: white;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+}
