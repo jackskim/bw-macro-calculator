@@ -408,6 +408,12 @@ h3 {
 .nav .nav-bottom ul li:hover {
   background-color: #b21515;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
 header.home {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../assets/home-header.jpg');
   background-size: auto, cover;
