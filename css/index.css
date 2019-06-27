@@ -835,6 +835,11 @@ i.fab {
     justify-content: space-around;
   }
 }
+@media (max-width: 800px) {
+  .recipes-tabs .tabs {
+    width: 85%;
+  }
+}
 .recipes-tabs .tabs span {
   background: #f0f0f0;
   text-align: center;
@@ -880,6 +885,11 @@ i.fab {
   .cards .content {
     flex-direction: column;
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .cards .content {
+    width: 95%;
   }
 }
 .cards img {
