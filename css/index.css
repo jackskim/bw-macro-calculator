@@ -485,9 +485,15 @@ header.home .inner .cta-button:hover {
 }
 @media (max-width: 500px) {
   .carousel .content {
-    flex-direction: column;
     max-width: 100%;
     padding: 30px 55px 30px;
+  }
+}
+@media (max-width: 800px) {
+  .carousel .content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
   }
 }
 .carousel .content .content-img {
@@ -499,9 +505,14 @@ header.home .inner .cta-button:hover {
   width: 100%;
   height: auto;
 }
+@media (max-width: 800px) {
+  .carousel .content .content-img {
+    width: 50%;
+  }
+}
 .carousel .content .content-text {
   margin: 0 50px;
-  max-width: 50%;
+  max-width: 65%;
   height: 45vh;
   position: relative;
 }
@@ -510,6 +521,13 @@ header.home .inner .cta-button:hover {
     height: 35vh;
     max-width: 100%;
     margin: 0 10px;
+  }
+}
+@media (max-width: 800px) {
+  .carousel .content .content-text {
+    height: initial;
+    max-width: 90%;
+    margin: initial;
   }
 }
 .carousel .content .content-text h2 {
@@ -540,6 +558,11 @@ header.home .inner .cta-button:hover {
 @media (max-width: 500px) {
   .carousel .content .content-text span {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .carousel .content .content-text span {
+    bottom: -1rem;
   }
 }
 .carousel .left-arrow,
