@@ -16,43 +16,87 @@
         color: #A0A0A0;
       }
     }
+    
+    @media(max-width: @tablet) {
+      margin: 0 3rem;
+    }
 
     @media (max-width: @mobile) {
       margin: 0 20px;
-    }
-
-    @media(max-width: @tablet) {
-      margin: 0 3rem;
     }
   }
 
   .nav-bottom {
     background-color: @nav-bg-color;
 
+    @media(max-width: @mobile) {
+      display: flex;
+      position: absolute;
+      min-height: 4.2rem;
+      width: 100%;
+      transition: min-height 0.3s;
+      overflow: hidden;
+
+      &.open {
+        min-height: 18.4rem;
+        transition: min-height 0.3s;
+      }
+    }
+    
+    .fa-bars {
+      display: none;
+      color: white;
+      z-index: 2;
+
+      @media (max-width: @mobile) {
+        display: flex;
+        position: absolute;
+        left: 3rem;
+      }
+    }
+    
     ul {
       list-style: none;
       display: flex;
       margin: 0 50px;
 
-      @media (max-width: @mobile) {
-        margin: 0 1%;
-      }
-
       @media (max-width: @tablet) {
-        margin: 0 3rem;
+        margin: 0;
+        padding: 0 3rem;
+      }
+      
+      @media (max-width: @mobile) {
+        position: absolute;
+        flex-direction: column;
+        top: -390%;
+        transition: top 0.3s;
+        width: 100%;
         padding: 0;
+        
+        &.open {
+          top: 2rem;
+          transition: top 0.3s;
+        }
       }
       
       a {
         color: white;
         text-transform: uppercase;
-      }
-
-      li {
-        padding: 12px;
 
         @media(max-width: @mobile) {
+          width: 100%;
+        }
+      }
+      
+      li {
+        padding: 12px;
+        text-align: center;
+        
+        @media(max-width: @mobile) {
           font-size: 1.4rem;
+          padding: 1.2rem 0;
+          width: 100%;
+          border-bottom: 1px solid @arrow-color;
         }
       }
 
@@ -63,4 +107,26 @@
   }
 
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+
+  @media (max-width: @mobile) {
+      display: flex;
+      position: absolute;
+      min-height: 4.2rem;
+      width: 100%;
+      transition: min-height 0.3s;
+      overflow: hidden;
+
+      &.open {
+        min-height: 18.4rem;
+        transition: min-height 0.3s;
+      }
+  }
+}
+
 
