@@ -351,9 +351,14 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .nav a {
   text-decoration: none;
-  color: #E01A1A;
+  color: white;
 }
 .nav .nav-top {
   display: flex;
@@ -374,9 +379,6 @@ h3 {
     margin: 0 20px;
   }
 }
-.nav .nav-bottom {
-  background-color: #E01A1A;
-}
 @media (max-width: 500px) {
   .nav .nav-bottom {
     display: flex;
@@ -389,6 +391,7 @@ h3 {
   .nav .nav-bottom.open {
     min-height: 18.4rem;
     transition: min-height 0.3s;
+    background-color: #E01A1A;
   }
 }
 .nav .nav-bottom .fa-bars {
@@ -457,6 +460,7 @@ h3 {
   top: 0;
   width: 100%;
   z-index: 9999;
+  background-color: #E01A1A;
 }
 @media (max-width: 500px) {
   .sticky {
@@ -473,18 +477,19 @@ h3 {
   }
 }
 .sticky-header {
-  margin-top: 4.2rem;
+  margin-top: 4.5rem;
 }
 header.home {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../assets/home-header.jpg');
   background-size: auto, cover;
   background-position: center, top;
   display: flex;
-  padding: 15rem 0 15rem;
+  padding: 21rem 0 16rem;
+  height: 55vh;
 }
 @media (max-width: 500px) {
   header.home {
-    padding: 10rem 0;
+    padding: 10rem 0 20rem;
   }
 }
 header.home .inner {
@@ -1026,9 +1031,15 @@ i.fab {
   }
 }
 header.about-home {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/about-header.jpg');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../assets/about-header.jpg');
   background-position: center, center;
-  height: 30vh;
+  height: 20vh;
+}
+@media (max-width: 500px) {
+  header.about-home {
+    padding: 15rem 0;
+    height: 40vh;
+  }
 }
 header.about-home .inner {
   max-width: 100%;
@@ -1037,7 +1048,12 @@ header.about-home .inner {
 }
 header.about-home .inner h1 {
   font-size: 6rem;
-  margin-top: 50px;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  header.about-home .inner h1 {
+    margin-top: 60px;
+  }
 }
 .how-it-works,
 .membership-features {
@@ -1096,6 +1112,10 @@ header.about-home .inner h1 {
 }
 .contact-header .inner {
   color: white;
+}
+.contact-header .inner h1 {
+  border-bottom: 1px solid white;
+  padding-bottom: 0.5rem;
 }
 .contact-cards {
   margin: 5rem 0 5rem;
