@@ -1,8 +1,11 @@
 .nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
 
   a {
     text-decoration: none;
-    color: @nav-bg-color;
+    color: white;
   }
 
   .nav-top {
@@ -27,7 +30,7 @@
   }
 
   .nav-bottom {
-    background-color: @nav-bg-color;
+    //background-color: @nav-bg-color;
 
     @media(max-width: @mobile) {
       display: flex;
@@ -113,6 +116,7 @@
   top: 0;
   width: 100%;
   z-index: 9999;
+  background-color: @nav-bg-color;
 
   @media (max-width: @mobile) {
       display: flex;
@@ -130,7 +134,7 @@
 }
 
 .sticky-header {
-  margin-top: 4.2rem;
+  margin-top: 4.5rem;
 }
 
 
