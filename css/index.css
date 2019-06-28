@@ -472,6 +472,9 @@ h3 {
     transition: min-height 0.3s;
   }
 }
+.sticky-header {
+  margin-top: 4.2rem;
+}
 header.home {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../assets/home-header.jpg');
   background-size: auto, cover;
@@ -913,6 +916,7 @@ i.fab {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5rem;
 }
 .recipes-tabs .tabs {
   display: flex;
@@ -960,6 +964,7 @@ i.fab {
   margin: 0 auto 5rem;
   flex-flow: row wrap;
   box-shadow: 0 -0.6rem 1.2rem -1rem #9b9b9b;
+  padding-top: 1rem;
 }
 @media (max-width: 500px) {
   .cards {
