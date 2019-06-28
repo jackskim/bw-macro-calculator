@@ -921,7 +921,7 @@ i.fab {
 }
 @media (max-width: 800px) {
   .recipes-tabs .tabs {
-    width: 85%;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
@@ -934,13 +934,17 @@ i.fab {
   background: #f0f0f0;
   text-align: center;
   padding: 0.5rem 1rem;
-  width: 10rem;
+  width: 20%;
   cursor: pointer;
-  margin: 1rem 0;
+  margin: 1rem 0 0;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-color: #c8c8c8;
+  border-radius: 1rem 1rem 0 0;
 }
 @media (max-width: 500px) {
   .recipes-tabs .tabs span {
-    width: 9rem;
+    width: 20%;
   }
 }
 .recipes-tabs .tabs span:hover {
@@ -948,15 +952,14 @@ i.fab {
   text-decoration: underline;
 }
 .recipes-tabs .tabs span.selected {
-  background: #d3d3d3;
-  text-decoration: underline;
+  background: white;
 }
 .cards {
   display: flex;
   justify-content: center;
   margin: 0 auto 5rem;
   flex-flow: row wrap;
-  width: 90%;
+  box-shadow: 0 -0.6rem 1.2rem -1rem #9b9b9b;
 }
 @media (max-width: 500px) {
   .cards {
@@ -966,7 +969,7 @@ i.fab {
 .cards .content {
   display: flex;
   background: #f0f0f0;
-  width: 45%;
+  width: 42%;
   padding: 2rem;
   margin: 1rem;
   align-items: center;
@@ -984,9 +987,14 @@ i.fab {
 }
 .cards img {
   position: relative;
-  max-width: 25rem;
-  max-height: 25rem;
+  width: 35%;
   margin-right: 2rem;
+}
+@media (max-width: 500px) {
+  .cards img {
+    width: 60%;
+    margin-right: 0;
+  }
 }
 .recipes-benefits .headline {
   margin-bottom: 30px;

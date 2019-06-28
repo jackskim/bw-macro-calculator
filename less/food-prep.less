@@ -53,7 +53,7 @@
         width: 60%;
 
         @media (max-width: @tablet) {
-            width: 85%;
+            width: 90%;
         }
 
         @media (max-width: @mobile) {
@@ -65,12 +65,16 @@
             background: rgba(240, 240, 240, 1);
             text-align: center;
             padding: 0.5rem 1rem;
-            width: 10rem;
+            width: 20%;
             cursor: pointer;
-            margin: 1rem 0;
+            margin: 1rem 0 0;
+            border-style: solid;
+            border-width: 1px 1px 0 1px;
+            border-color: rgb(200, 200, 200);
+            border-radius: 1rem 1rem 0 0;
 
             @media(max-width: @mobile) {
-                width: 9rem;
+                width: 20%;
             }
     
             &:hover {
@@ -79,8 +83,7 @@
             }
     
             &.selected {
-                background: @arrow-color;
-                text-decoration: underline;
+                background: white;
             }
         }
     }
@@ -91,7 +94,7 @@
     justify-content: center;
     margin: 0 auto 5rem;
     flex-flow: row wrap;
-    width: 90%;
+    box-shadow: 0 -0.6rem 1.2rem -1rem rgb(155, 155, 155);
 
     @media(max-width: @mobile) {
         width: 95%;
@@ -101,7 +104,7 @@
     .content {
         display: flex;
         background: rgba(240, 240, 240, 1);
-        width: 45%;
+        width: 42%;
         padding: 2rem;
         margin: 1rem;
         align-items: center;
@@ -118,9 +121,13 @@
 
     img {
         position: relative;
-        max-width: 25rem;
-        max-height: 25rem;
+        width: 35%;
         margin-right: 2rem;
+
+        @media (max-width: @mobile) {
+            width: 60%;
+            margin-right: 0;
+        }
     }
 }
 
