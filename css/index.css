@@ -1031,9 +1031,9 @@ i.fab {
   }
 }
 header.about-home {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/about-header.jpg');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../assets/about-header.jpg');
   background-position: center, center;
-  height: 30vh;
+  height: 20vh;
 }
 header.about-home .inner {
   max-width: 100%;
@@ -1042,7 +1042,7 @@ header.about-home .inner {
 }
 header.about-home .inner h1 {
   font-size: 6rem;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .how-it-works,
 .membership-features {
