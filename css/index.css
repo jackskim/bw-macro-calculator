@@ -484,8 +484,8 @@ header.home {
   background-size: auto, cover;
   background-position: center, top;
   display: flex;
-  padding: 15rem 0 16rem;
-  height: 60vh;
+  padding: 21rem 0 16rem;
+  height: 55vh;
 }
 @media (max-width: 500px) {
   header.home {
