@@ -871,9 +871,9 @@ i.fab {
   background: #f0f0f0;
   text-align: center;
   padding: 0.5rem 1rem;
-  width: 10rem;
+  width: 20%;
   cursor: pointer;
-  margin: 1rem 0;
+  margin: 1rem 0 0;
 }
 @media (max-width: 500px) {
   .recipes-tabs .tabs span {
@@ -893,6 +893,9 @@ i.fab {
   justify-content: center;
   margin: 0 auto 5rem;
   flex-flow: row wrap;
+  border-top: 1px solid #FFBF00;
+  border-bottom: 1px solid #FFBF00;
+  box-shadow: 0 0 0.5rem #E7B216;
 }
 @media (max-width: 500px) {
   .cards {

@@ -65,9 +65,9 @@
             background: rgba(240, 240, 240, 1);
             text-align: center;
             padding: 0.5rem 1rem;
-            width: 10rem;
+            width: 20%;
             cursor: pointer;
-            margin: 1rem 0;
+            margin: 1rem 0 0;
 
             @media(max-width: @mobile) {
                 width: 9rem;
@@ -91,6 +91,9 @@
     justify-content: center;
     margin: 0 auto 5rem;
     flex-flow: row wrap;
+    border-top: 1px solid @accent-color;
+    border-bottom: 1px solid @accent-color;
+    box-shadow: 0 0 0.5rem @accent-hover;
 
     @media(max-width: @mobile) {
         width: 95%;
