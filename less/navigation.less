@@ -108,3 +108,25 @@
 
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+
+  @media (max-width: @mobile) {
+      display: flex;
+      position: absolute;
+      min-height: 4.2rem;
+      width: 100%;
+      transition: min-height 0.3s;
+      overflow: hidden;
+
+      &.open {
+        min-height: 18.4rem;
+        transition: min-height 0.3s;
+      }
+  }
+}
+
+
