@@ -56,13 +56,13 @@ class Carousel {
   decreaseIdx(){
     if(this.currIndex === 0) {
       this.prevIndex--;
-      this.index = this.allContent.length - 1;
+      this.currIndex = this.allContent.length - 1;
       this.nextIndex--;
-    } else if(this.prevIndex = 0) {
+    } else if(this.prevIndex === 0) {
       this.prevIndex = this.allContent.length - 1;
       this.currIndex--;
       this.nextIndex--;
-    } else if(this.nextIndex = 0) {
+    } else if(this.nextIndex === 0) {
       this.prevIndex--;
       this.currIndex--;
       this.nextIndex = this.allContent.length - 1;
@@ -98,6 +98,9 @@ class Carousel {
     // Hide all content
     this.hideAll();
 
+    // Remove current position classes
+    this.removeClasses();
+
     this.increaseIdx();
 
     // Get the correct content
@@ -113,6 +116,9 @@ class Carousel {
   previous(){
     // Hide all content
     this.hideAll();
+
+    // Remove current position classes
+    this.removeClasses();
 
     this.decreaseIdx();
 
