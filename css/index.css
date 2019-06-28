@@ -1044,6 +1044,11 @@ header.about-home .inner h1 {
   font-size: 6rem;
   margin-top: 20px;
 }
+@media (max-width: 500px) {
+  header.about-home .inner h1 {
+    margin-top: 60px;
+  }
+}
 .how-it-works,
 .membership-features {
   display: flex;
