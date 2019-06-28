@@ -1035,6 +1035,12 @@ header.about-home {
   background-position: center, center;
   height: 20vh;
 }
+@media (max-width: 500px) {
+  header.about-home {
+    padding: 15rem 0;
+    height: 40vh;
+  }
+}
 header.about-home .inner {
   max-width: 100%;
   padding-left: 25%;
