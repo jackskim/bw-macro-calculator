@@ -52,13 +52,13 @@
         justify-content: space-between;
         width: 60%;
 
+        @media (max-width: @tablet) {
+            width: 85%;
+        }
+
         @media (max-width: @mobile) {
             width: 100%;
             justify-content: space-around;
-        }
-
-        @media (max-width: @tablet) {
-            width: 85%;
         }
     
         span {
@@ -105,14 +105,14 @@
         padding: 2rem;
         margin: 1rem;
         align-items: center;
+
+        @media (max-width: @tablet) {
+            width: 95%;
+        }
         
         @media(max-width: @mobile) {
             flex-direction: column;
             width: 100%;
-        }
-
-        @media (max-width: @tablet) {
-            width: 95%;
         }
     }
 
@@ -136,7 +136,7 @@
         justify-content: space-around;
         margin: 0 auto;
 
-        @media(max-width: 500px) {
+        @media(max-width: @mobile) {
             flex-direction: column;
             align-items: center;
         }
@@ -145,7 +145,7 @@
             width: 25%;
             text-align: center;
 
-            @media(max-width: 500px) {
+            @media(max-width: @mobile) {
                 width: 80%;
             }
         }
