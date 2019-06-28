@@ -27,8 +27,6 @@ window.onscroll = function() {
   stickyNav();
 };
 
-// Get the header element
-const header = document.querySelector('.home');
 
 // Get the offset position of the navbar
 const sticky = navMenu.offsetTop;
@@ -38,9 +36,7 @@ const sticky = navMenu.offsetTop;
 function stickyNav() {
   if (window.pageYOffset >= sticky) {
     navMenu.classList.add('sticky');
-    header.classList.add('sticky-header');
   } else {
     navMenu.classList.remove('sticky');
-    header.classList.remove('sticky-header');
   }
 }
