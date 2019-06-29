@@ -6,7 +6,6 @@
   justify-content: space-around;
   align-items: center;
   position: relative;
-  overflow: hidden;
   width: 90%;
   max-width: 130rem;
   margin: 0 auto 5rem;
@@ -15,11 +14,15 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    height: 42rem;
+    height: 44rem;
     width: 100%;
 
     @media(max-width: @tablet) {
-      height: 46rem;
+      height: 48rem;
+    }
+
+    @media(max-width: @mobile) {
+      height: 50rem;
     }
   }
 
@@ -61,7 +64,7 @@
 
     @media(max-width: @mobile) {
       max-width: 100%;
-      padding: 50px 30px 100px;
+      padding: 5rem 3rem 5rem;
     }
     
     .content-img {
@@ -77,22 +80,23 @@
       @media(max-width: @tablet) {
         width: 35%;
       }
+
+      @media(max-width: @mobile) {
+        width: 50%;
+      }
     }
 
     .content-text {
       margin: 0 50px;
-      max-width: 65%;
-      // height: 45vh;
+      width: 65%;
       position: relative;
 
       @media(max-width: @tablet) {
-        height: initial;
-        max-width: 90%;
+        width: 90%;
         margin: initial;
       }
 
       @media( max-width: @mobile) {
-        height: 35vh;
         max-width: 100%;
         margin: 0 10px;
       }
@@ -146,6 +150,11 @@
  .right-arrow {
     cursor: pointer;
     z-index: 1;
+    
+    @media(max-width: @mobile) {
+      position: absolute;
+      top: 50%;
+    }
 
     i.fas {
       color: @arrow-color;
@@ -154,18 +163,13 @@
   
   .left-arrow {
     @media(max-width: @mobile) {
-      position: absolute;
-      left: 0;
-      bottom: 15px;
+      left: -1.5rem;
     }
   }
 
   .right-arrow {
     @media(max-width: @mobile) {
-      position: absolute;
-      right: 0;
-      bottom: 15px;
+      right: -1.5rem;
     }
   }
-
 }

@@ -546,7 +546,6 @@ header.home .inner .cta-button:hover {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  overflow: hidden;
   width: 90%;
   max-width: 130rem;
   margin: 0 auto 5rem;
@@ -555,12 +554,17 @@ header.home .inner .cta-button:hover {
   display: flex;
   position: relative;
   overflow: hidden;
-  height: 42rem;
+  height: 44rem;
   width: 100%;
 }
 @media (max-width: 800px) {
   .carousel .inner {
-    height: 46rem;
+    height: 48rem;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .inner {
+    height: 50rem;
   }
 }
 .carousel .content {
@@ -599,7 +603,7 @@ header.home .inner .cta-button:hover {
 @media (max-width: 500px) {
   .carousel .content {
     max-width: 100%;
-    padding: 50px 30px 100px;
+    padding: 5rem 3rem 5rem;
   }
 }
 .carousel .content .content-img {
@@ -616,21 +620,24 @@ header.home .inner .cta-button:hover {
     width: 35%;
   }
 }
+@media (max-width: 500px) {
+  .carousel .content .content-img {
+    width: 50%;
+  }
+}
 .carousel .content .content-text {
   margin: 0 50px;
-  max-width: 65%;
+  width: 65%;
   position: relative;
 }
 @media (max-width: 800px) {
   .carousel .content .content-text {
-    height: initial;
-    max-width: 90%;
+    width: 90%;
     margin: initial;
   }
 }
 @media (max-width: 500px) {
   .carousel .content .content-text {
-    height: 35vh;
     max-width: 100%;
     margin: 0 10px;
   }
@@ -685,22 +692,25 @@ header.home .inner .cta-button:hover {
   cursor: pointer;
   z-index: 1;
 }
+@media (max-width: 500px) {
+  .carousel .left-arrow,
+  .carousel .right-arrow {
+    position: absolute;
+    top: 50%;
+  }
+}
 .carousel .left-arrow i.fas,
 .carousel .right-arrow i.fas {
   color: #d3d3d3;
 }
 @media (max-width: 500px) {
   .carousel .left-arrow {
-    position: absolute;
-    left: 0;
-    bottom: 15px;
+    left: -1.5rem;
   }
 }
 @media (max-width: 500px) {
   .carousel .right-arrow {
-    position: absolute;
-    right: 0;
-    bottom: 15px;
+    right: -1.5rem;
   }
 }
 footer {
