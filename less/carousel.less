@@ -3,42 +3,50 @@
  ======================= */
 .carousel {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 5%;
   position: relative;
+  overflow: hidden;
+  width: 90%;
+  max-width: 130rem;
+  margin: 5rem auto;
 
   @media(max-width: @mobile) {
     margin-bottom: 50px;
   }
 
+  .inner {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    height: 42rem;
+    width: 100%;
+  }
+
   .content {
     display: flex;
-    justify-content: space-evenly;
-    max-width: 55%;
-    box-shadow: 0 0 14px 2px rgba(0,0,0,.31);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 50%;
+    width: 75%;
+    max-width: 90rem;
     padding: 30px;
-    position: inherit;
+    box-shadow: 0 0 14px 2px rgba(0,0,0,.31);
+    transition: 1s;
 
     &.slide-left {
-      transition: 1s;
-      left: -100%;
+      left: -50%;
       opacity: 0;
-      display: initial;
     }
 
     &.slide-middle {
-      transition: 1s;
-      left: 0;
-      opacity: 1;
-      display: initial;
+      left: 50%;
     }
 
     &.slide-right {
-      transition: 1s;
-      left: 100%;
+      left: 150%;
       opacity: 0;
-      display: initial;
     }
 
     &.hide {
@@ -74,7 +82,7 @@
     .content-text {
       margin: 0 50px;
       max-width: 65%;
-      height: 45vh;
+      // height: 45vh;
       position: relative;
 
       @media(max-width: @tablet) {
@@ -125,18 +133,13 @@
 
  .left-arrow,
  .right-arrow {
-    margin: 0 30px;
     cursor: pointer;
 
     i.fas {
       color: @arrow-color;
     }
   }
-
-  @media (max-width: @mobile) {
-    margin: 0;
-  }
-
+  
   .left-arrow {
     @media(max-width: @mobile) {
       position: absolute;
@@ -154,8 +157,3 @@
   }
 
 }
-
-// .carousel .hide {
-//   display: none;
-// }
-
