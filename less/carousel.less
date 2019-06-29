@@ -11,8 +11,8 @@
   max-width: 130rem;
   margin: 5rem auto;
 
-  @media(max-width: @mobile) {
-    margin-bottom: 50px;
+  @media(max-width: @tablet) {
+    margin: 0 auto 5rem;
   }
 
   .inner {
@@ -21,6 +21,10 @@
     overflow: hidden;
     height: 42rem;
     width: 100%;
+
+    @media(max-width: @tablet) {
+      height: 46rem;
+    }
   }
 
   .content {
@@ -75,7 +79,7 @@
       }
 
       @media(max-width: @tablet) {
-        width: 50%;
+        width: 35%;
       }
     }
 
@@ -84,6 +88,8 @@
       max-width: 65%;
       // height: 45vh;
       position: relative;
+
+
 
       @media(max-width: @tablet) {
         height: initial;
@@ -99,6 +105,11 @@
 
       h2 {
         font-size: 3.2rem;
+
+        @media(max-width: @tablet) {
+          font-size: 2rem;
+        }
+
         @media(max-width: @mobile) {
           font-size: 2.4rem;
         }
@@ -107,6 +118,12 @@
       p {
         font-size: 2.0rem;
         line-height: 1.4;
+        font-style: oblique;
+
+        &:before, &:after {
+          content: '"'
+        }
+
         @media(max-width: @mobile) {
           font-size: 1.6rem;
         }
