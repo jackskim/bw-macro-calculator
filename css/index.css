@@ -683,6 +683,7 @@ header.home .inner .cta-button:hover {
 .carousel .left-arrow,
 .carousel .right-arrow {
   cursor: pointer;
+  z-index: 1;
 }
 .carousel .left-arrow i.fas,
 .carousel .right-arrow i.fas {
