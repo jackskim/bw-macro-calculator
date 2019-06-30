@@ -3,22 +3,58 @@
  ======================= */
 .carousel {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 5%;
   position: relative;
+  width: 90%;
+  max-width: 130rem;
+  margin: 0 auto 5rem;
 
-  @media(max-width: @mobile) {
-    margin-bottom: 50px;
+  .inner {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    height: 44rem;
+    width: 100%;
+
+    @media(max-width: @tablet) {
+      height: 48rem;
+    }
+
+    @media(max-width: @mobile) {
+      height: 50rem;
+    }
   }
-
 
   .content {
     display: flex;
-    justify-content: space-evenly;
-    max-width: 55%;
-    box-shadow: 0 0 14px 2px rgba(0,0,0,.31);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 50%;
+    width: 75%;
+    max-width: 90rem;
     padding: 30px;
+    box-shadow: 0 0 14px 2px rgba(0,0,0,.31);
+    transition: 1s;
+
+    &.slide-left {
+      left: -50%;
+      opacity: 0;
+    }
+
+    &.slide-middle {
+      left: 50%;
+    }
+
+    &.slide-right {
+      left: 150%;
+      opacity: 0;
+    }
+
+    &.hide {
+      display: none;
+    }
     
     @media(max-width: @tablet) {
       flex-direction: column;
@@ -28,7 +64,7 @@
 
     @media(max-width: @mobile) {
       max-width: 100%;
-      padding: 50px 30px 100px;
+      padding: 5rem 3rem 5rem;
     }
     
     .content-img {
@@ -42,30 +78,36 @@
       }
 
       @media(max-width: @tablet) {
+        width: 35%;
+      }
+
+      @media(max-width: @mobile) {
         width: 50%;
       }
     }
 
     .content-text {
       margin: 0 50px;
-      max-width: 65%;
-      height: 45vh;
+      width: 65%;
       position: relative;
 
       @media(max-width: @tablet) {
-        height: initial;
-        max-width: 90%;
+        width: 90%;
         margin: initial;
       }
 
       @media( max-width: @mobile) {
-        height: 35vh;
         max-width: 100%;
         margin: 0 10px;
       }
 
       h2 {
         font-size: 3.2rem;
+
+        @media(max-width: @tablet) {
+          font-size: 2rem;
+        }
+
         @media(max-width: @mobile) {
           font-size: 2.4rem;
         }
@@ -74,6 +116,12 @@
       p {
         font-size: 2.0rem;
         line-height: 1.4;
+        font-style: oblique;
+
+        &:before, &:after {
+          content: '"'
+        }
+
         @media(max-width: @mobile) {
           font-size: 1.6rem;
         }
@@ -100,37 +148,28 @@
 
  .left-arrow,
  .right-arrow {
-    margin: 0 30px;
     cursor: pointer;
+    z-index: 1;
+    
+    @media(max-width: @mobile) {
+      position: absolute;
+      top: 50%;
+    }
 
     i.fas {
       color: @arrow-color;
     }
   }
-
-  @media (max-width: @mobile) {
-    margin: 0;
-  }
-
+  
   .left-arrow {
     @media(max-width: @mobile) {
-      position: absolute;
-      left: 0;
-      bottom: 15px;
+      left: -1.5rem;
     }
   }
 
   .right-arrow {
     @media(max-width: @mobile) {
-      position: absolute;
-      right: 0;
-      bottom: 15px;
+      right: -1.5rem;
     }
   }
-
 }
-
-.carousel .hide {
-  display: none;
-}
-

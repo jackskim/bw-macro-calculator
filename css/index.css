@@ -548,22 +548,55 @@ header.home .inner .cta-button:hover {
  ======================= */
 .carousel {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 5%;
   position: relative;
+  width: 90%;
+  max-width: 130rem;
+  margin: 0 auto 5rem;
+}
+.carousel .inner {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 44rem;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .carousel .inner {
+    height: 48rem;
+  }
 }
 @media (max-width: 500px) {
-  .carousel {
-    margin-bottom: 50px;
+  .carousel .inner {
+    height: 50rem;
   }
 }
 .carousel .content {
   display: flex;
-  justify-content: space-evenly;
-  max-width: 55%;
-  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: 50%;
+  width: 75%;
+  max-width: 90rem;
   padding: 30px;
+  box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.31);
+  transition: 1s;
+}
+.carousel .content.slide-left {
+  left: -50%;
+  opacity: 0;
+}
+.carousel .content.slide-middle {
+  left: 50%;
+}
+.carousel .content.slide-right {
+  left: 150%;
+  opacity: 0;
+}
+.carousel .content.hide {
+  display: none;
 }
 @media (max-width: 800px) {
   .carousel .content {
@@ -575,7 +608,7 @@ header.home .inner .cta-button:hover {
 @media (max-width: 500px) {
   .carousel .content {
     max-width: 100%;
-    padding: 50px 30px 100px;
+    padding: 5rem 3rem 5rem;
   }
 }
 .carousel .content .content-img {
@@ -589,31 +622,38 @@ header.home .inner .cta-button:hover {
 }
 @media (max-width: 800px) {
   .carousel .content .content-img {
+    width: 35%;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .content .content-img {
     width: 50%;
   }
 }
 .carousel .content .content-text {
   margin: 0 50px;
-  max-width: 65%;
-  height: 45vh;
+  width: 65%;
   position: relative;
 }
 @media (max-width: 800px) {
   .carousel .content .content-text {
-    height: initial;
-    max-width: 90%;
+    width: 90%;
     margin: initial;
   }
 }
 @media (max-width: 500px) {
   .carousel .content .content-text {
-    height: 35vh;
     max-width: 100%;
     margin: 0 10px;
   }
 }
 .carousel .content .content-text h2 {
   font-size: 3.2rem;
+}
+@media (max-width: 800px) {
+  .carousel .content .content-text h2 {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 500px) {
   .carousel .content .content-text h2 {
@@ -623,6 +663,11 @@ header.home .inner .cta-button:hover {
 .carousel .content .content-text p {
   font-size: 2rem;
   line-height: 1.4;
+  font-style: oblique;
+}
+.carousel .content .content-text p:before,
+.carousel .content .content-text p:after {
+  content: '"';
 }
 @media (max-width: 500px) {
   .carousel .content .content-text p {
@@ -649,34 +694,29 @@ header.home .inner .cta-button:hover {
 }
 .carousel .left-arrow,
 .carousel .right-arrow {
-  margin: 0 30px;
   cursor: pointer;
+  z-index: 1;
+}
+@media (max-width: 500px) {
+  .carousel .left-arrow,
+  .carousel .right-arrow {
+    position: absolute;
+    top: 50%;
+  }
 }
 .carousel .left-arrow i.fas,
 .carousel .right-arrow i.fas {
   color: #d3d3d3;
 }
 @media (max-width: 500px) {
-  .carousel {
-    margin: 0;
-  }
-}
-@media (max-width: 500px) {
   .carousel .left-arrow {
-    position: absolute;
-    left: 0;
-    bottom: 15px;
+    left: -1.5rem;
   }
 }
 @media (max-width: 500px) {
   .carousel .right-arrow {
-    position: absolute;
-    right: 0;
-    bottom: 15px;
+    right: -1.5rem;
   }
-}
-.carousel .hide {
-  display: none;
 }
 footer {
   display: flex;
