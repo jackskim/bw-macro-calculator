@@ -3,17 +3,46 @@
   top: 0;
   width: 100%;
 
+  &.transparent {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    text-shadow: 0 0 0.5rem black;
+
+    .nav-bottom ul li:hover {
+      transform: scale(1.1);
+      background: initial;
+
+      @media(max-width: @mobile) {
+        background: darken(@nav-bg-color, 10%);
+        transform: initial;
+      }
+    }
+  }
+  
   a {
     text-decoration: none;
     color: white;
-  }
 
+    @media(max-width: @mobile) {
+      color: black;
+
+      &.logo {
+        color: @nav-bg-color;
+      }
+    }
+  }
+  
   .nav-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 100px;
+    padding: 0 100px;
+    transition: background 0.3s;
 
+    @media(min-width: 501px) {
+      &.colored {
+        background: @nav-bg-color;
+      }
+    }
     .nav-login-signup {
       span {
         color: #A0A0A0;
@@ -21,15 +50,18 @@
     }
     
     @media(max-width: @tablet) {
-      margin: 0 3rem;
+      padding: 0 3rem;
     }
 
     @media (max-width: @mobile) {
-      margin: 0 20px;
+      background: white;
+      padding: 0 20px;
+      text-shadow: none;
     }
   }
 
   .nav-bottom {
+    transition: background 0.3s;
 
     @media(max-width: @mobile) {
       display: flex;
@@ -38,12 +70,12 @@
       width: 100%;
       transition: min-height 0.3s;
       overflow: hidden;
+      background: @nav-bg-color;
 
       &.open {
         min-height: 18.4rem;
         transition: min-height 0.3s;
         background-color: @nav-bg-color;
-       
       }
     }
     
@@ -95,6 +127,7 @@
       li {
         padding: 12px;
         text-align: center;
+        transition: 0.3s;
         
         @media(max-width: @mobile) {
           font-size: 1.4rem;
@@ -108,29 +141,14 @@
         background-color: darken(@nav-bg-color, 10%);
       }
     }
-  }
 
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-  background-color: @nav-bg-color;
-
-  @media (max-width: @mobile) {
-      display: flex;
-      position: absolute;
-      min-height: 4.2rem;
+    &.sticky {
+      position: fixed;
+      top: 0;
       width: 100%;
-      transition: min-height 0.3s;
-      overflow: hidden;
-
-      &.open {
-        min-height: 18.4rem;
-        transition: min-height 0.3s;
-      }
+      z-index: 9999;
+      background-color: @nav-bg-color;
+    }
   }
 }
 

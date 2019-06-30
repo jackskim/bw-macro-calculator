@@ -20,6 +20,10 @@ class NavMenu {
 const navMenu = document.querySelector('.nav-bottom');
 new NavMenu(navMenu);
 
+// Get the navigation
+const navBar = document.querySelector('.nav');
+const navTop = navBar.querySelector('.nav-top');
+
 
 // STICKY NAV
 // When the user scrolls, execute stickyNav
@@ -36,7 +40,11 @@ const sticky = navMenu.offsetTop;
 function stickyNav() {
   if (window.pageYOffset >= sticky) {
     navMenu.classList.add('sticky');
+    navBar.classList.remove('transparent');
+    navTop.classList.add('colored');
   } else {
     navMenu.classList.remove('sticky');
+    navTop.classList.remove('colored');
+    navBar.classList.add('transparent');
   }
 }
