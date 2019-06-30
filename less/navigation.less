@@ -21,6 +21,14 @@
   a {
     text-decoration: none;
     color: white;
+
+    @media(max-width: @mobile) {
+      color: black;
+
+      &.logo {
+        color: @nav-bg-color;
+      }
+    }
   }
   
   .nav-top {
@@ -29,11 +37,12 @@
     justify-content: space-between;
     padding: 0 100px;
     transition: background 0.3s;
-    
-    &.colored {
-      background: @nav-bg-color;
+
+    @media(min-width: 501px) {
+      &.colored {
+        background: @nav-bg-color;
+      }
     }
-    
     .nav-login-signup {
       span {
         color: #A0A0A0;
@@ -48,18 +57,6 @@
       background: white;
       padding: 0 20px;
       text-shadow: none;
-
-      .logo {
-        color: @nav-bg-color;
-      }
-
-      .nav-login-signup a {
-        color: @accent-color;
-
-        &:hover {
-          color: @accent-hover;
-        }
-      }
     }
   }
 
@@ -73,6 +70,7 @@
       width: 100%;
       transition: min-height 0.3s;
       overflow: hidden;
+      background: @nav-bg-color;
 
       &.open {
         min-height: 18.4rem;
@@ -143,15 +141,15 @@
         background-color: darken(@nav-bg-color, 10%);
       }
     }
-  }
-}
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-  background-color: @nav-bg-color;
+    &.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9999;
+      background-color: @nav-bg-color;
+    }
+  }
 }
 
 .sticky-header {
