@@ -383,12 +383,12 @@ h3 {
 }
 @media (max-width: 800px) {
   .nav .nav-top {
-    margin: 0 3rem;
+    padding: 0 3rem;
   }
 }
 @media (max-width: 500px) {
   .nav .nav-top {
-    margin: 0 20px;
+    padding: 0 20px;
   }
 }
 .nav .nav-bottom {
