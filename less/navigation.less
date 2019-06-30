@@ -6,6 +6,11 @@
   &.transparent {
     background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0));
     text-shadow: 0 0 0.5rem black;
+
+    .nav-bottom ul li:hover {
+      transform: scale(1.1);
+      background: initial;
+    }
   }
   
   a {
@@ -40,7 +45,7 @@
   }
 
   .nav-bottom {
-    transition: 0.3s;
+    transition: background 0.3s;
 
     @media(max-width: @mobile) {
       display: flex;
@@ -105,6 +110,7 @@
       li {
         padding: 12px;
         text-align: center;
+        transition: 0.3s;
         
         @media(max-width: @mobile) {
           font-size: 1.4rem;
