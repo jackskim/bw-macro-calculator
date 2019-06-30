@@ -364,6 +364,12 @@ h3 {
   transform: scale(1.1);
   background: initial;
 }
+@media (max-width: 500px) {
+  .nav.transparent .nav-bottom ul li:hover {
+    background: #b21515;
+    transform: initial;
+  }
+}
 .nav a {
   text-decoration: none;
   color: white;
@@ -388,7 +394,18 @@ h3 {
 }
 @media (max-width: 500px) {
   .nav .nav-top {
+    background: white;
     padding: 0 20px;
+    text-shadow: none;
+  }
+  .nav .nav-top .logo {
+    color: #E01A1A;
+  }
+  .nav .nav-top .nav-login-signup a {
+    color: #FFBF00;
+  }
+  .nav .nav-top .nav-login-signup a:hover {
+    color: #E7B216;
   }
 }
 .nav .nav-bottom {
@@ -477,20 +494,6 @@ h3 {
   width: 100%;
   z-index: 9999;
   background-color: #E01A1A;
-}
-@media (max-width: 500px) {
-  .sticky {
-    display: flex;
-    position: absolute;
-    min-height: 4.2rem;
-    width: 100%;
-    transition: min-height 0.3s;
-    overflow: hidden;
-  }
-  .sticky.open {
-    min-height: 18.4rem;
-    transition: min-height 0.3s;
-  }
 }
 .sticky-header {
   margin-top: 4.5rem;

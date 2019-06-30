@@ -10,6 +10,11 @@
     .nav-bottom ul li:hover {
       transform: scale(1.1);
       background: initial;
+
+      @media(max-width: @mobile) {
+        background: darken(@nav-bg-color, 10%);
+        transform: initial;
+      }
     }
   }
   
@@ -40,7 +45,21 @@
     }
 
     @media (max-width: @mobile) {
+      background: white;
       padding: 0 20px;
+      text-shadow: none;
+
+      .logo {
+        color: @nav-bg-color;
+      }
+
+      .nav-login-signup a {
+        color: @accent-color;
+
+        &:hover {
+          color: @accent-hover;
+        }
+      }
     }
   }
 
@@ -125,7 +144,6 @@
       }
     }
   }
-
 }
 
 .sticky {
@@ -134,20 +152,6 @@
   width: 100%;
   z-index: 9999;
   background-color: @nav-bg-color;
-
-  @media (max-width: @mobile) {
-      display: flex;
-      position: absolute;
-      min-height: 4.2rem;
-      width: 100%;
-      transition: min-height 0.3s;
-      overflow: hidden;
-
-      &.open {
-        min-height: 18.4rem;
-        transition: min-height 0.3s;
-      }
-  }
 }
 
 .sticky-header {
