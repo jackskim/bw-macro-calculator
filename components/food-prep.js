@@ -10,10 +10,10 @@ class TabLink {
       }
 
       this.cards = Array.from(this.cards).map(card => new TabCard(card));
-      this.tabElement.addEventListener('click', this.selectTab);
+      this.tabElement.addEventListener('click', this.selectTab.bind(this));
     }
   
-    selectTab = () => {
+    selectTab() {
       const tabs = document.querySelectorAll('.tabs span');
       tabs.forEach(tab => tab.classList.remove('selected'));
       const cards = document.querySelectorAll('.card');
