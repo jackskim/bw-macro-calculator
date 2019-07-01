@@ -5,10 +5,10 @@ class NavMenu {
         this.menuButton = navigation.querySelector('.menu-button');
         this.links = navigation.querySelector('ul');
 
-        this.menuButton.addEventListener('click', this.toggleMenu);
+        this.menuButton.addEventListener('click', this.toggleMenu.bind(this));
     }
 
-    toggleMenu = () => {
+    toggleMenu() {
         event.stopPropagation;
         this.links.classList.toggle('open');
         this.navigation.classList.toggle('open');
