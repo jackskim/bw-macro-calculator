@@ -6,19 +6,26 @@ class NavMenu {
         this.links = navigation.querySelector('ul');
 
         this.menuButton.addEventListener('click', this.toggleMenu.bind(this));
+
+        document.addEventListener('click', event => {
+          event.stopPropagation();
+          if (navBottom.querySelector('ul').classList.contains('open')) {
+            this.links.classList.remove('open');
+            this.navigation.classList.remove('open');
+          }
+        });
     }
 
-    toggleMenu() {
-        event.stopPropagation;
+    toggleMenu(event) {
+        event.stopPropagation();
         this.links.classList.toggle('open');
         this.navigation.classList.toggle('open');
     }
 }
 
-
 // Get the menu
-const navMenu = document.querySelector('.nav-bottom');
-new NavMenu(navMenu);
+const navBottom = document.querySelector('.nav-bottom');
+new NavMenu(navBottom);
 
 // Get the navigation
 const navBar = document.querySelector('.nav');
@@ -33,17 +40,17 @@ window.onscroll = function() {
 
 
 // Get the offset position of the navbar
-const sticky = navMenu.offsetTop;
+const sticky = navBottom.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll
 // position.  Remove it when you leave the scroll position
 function stickyNav() {
   if (window.pageYOffset >= sticky) {
-    navMenu.classList.add('sticky');
+    navBottom.classList.add('sticky');
     navBar.classList.remove('transparent');
     navTop.classList.add('colored');
   } else {
-    navMenu.classList.remove('sticky');
+    navBottom.classList.remove('sticky');
     navTop.classList.remove('colored');
     navBar.classList.add('transparent');
   }
