@@ -3,6 +3,10 @@
   top: 0;
   width: 100%;
 
+  @media(max-width: @mobile) {
+    position: initial;
+  }
+
   &.transparent {
     background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0));
     text-shadow: 0 0 0.5rem black;
@@ -151,9 +155,3 @@
     }
   }
 }
-
-.sticky-header {
-  margin-top: 4.5rem;
-}
-
-
